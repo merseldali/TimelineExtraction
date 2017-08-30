@@ -1,0 +1,13 @@
+ergegergernipegnr
+rg,pergjer,ogerzpfjzef
+ze,fpzeifzepofzejfko^zefk
+zefk^zeofkze^fkp
+PeriOd      = from:-545 till:0
+  from:start till:1922 shift:($dx,15)   text:Vladimir~Ilyich~[[Lenin]]
+  from:1922  till:1953 shift:($dx,5)    text:[[Stalin|Josef Stalin]]
+  from:1953  till:1964 shift:($dx,5)    text:Nikita~[[Khrushchev]]
+  fezôfkezfzfhioguorefaergzef
+  from:1964  till:1982 shift:($dx,5)    text:Leonid~[[Brezhnev]]
+  from:1982  till:1984 shift:($dx,-12)  text:Yuri~[[Andropov]]
+  from:1984  till:1985 shift:($dx,4)    text:Konstantin~[[Chernenko]] fontsize:XS
+  from:1985  till:end shift:($dx,10)   text:Mikhail~[[Gorbachev]]

@@ -1,0 +1,579 @@
+
+===Boys Track and Field===
+{| class="wikitable"
+|-
+! Year
+! School
+! Division/Class
+|-
+| 2000
+| Clare Pioneers
+| Division 3
+|}
+
+===Girls Track and Field===
+{| class="wikitable"
+|-
+! Year
+! School
+! Division/Class
+|-
+| 1994
+| Clare Pioneers
+| Class C
+|-
+| 1996
+| Clare Pioneers
+| Class C
+|}
+
+{| class="wikitable" style="text-align:center"
+! #
+! colspan=2| Speaker
+! Party
+! District
+! Legislature
+! Start of service
+! End of service
+! Era
+|-
+| 1
+|style="background:#98fb98"|
+|[[Sergio Osmeña]]
+|[[Nacionalista Party|Nacionalista]]
+|[[Cebu]]
+| [[1st Philippine Legislature|1st Legislature]] - [[5th Philippine Legislature|5th Legislature]]
+| October 16, 1907
+| 1922
+|rowspan=3| [[History of the Philippines (1898–1946)#Insular Government (1901–35)|American Insular Government]]
+|-
+| 2
+|style="background:#98fb98"|
+|[[Manuel Roxas]]
+|[[Nacionalista Party|Nacionalista]]
+|[[Capiz]]
+| [[6th Philippine Legislature|6th Legislature]] - [[9th Philippine Legislature|9th Legislature]]
+| 1922
+| 1933
+|
+|-
+|3
+|style="background:#98fb98"|
+|[[Quintín Paredes]]
+|[[Nacionalista Party|Nacionalista]]
+|[[Abra (province)|Abra]]
+|[[10th Philippine Legislature|10th Legislature]]
+| 1933
+| 1935
+|-
+| 4
+|style="background:#98fb98"|
+|[[Gil Montilla]]
+|[[Nacionalista Party|Nacionalista]]
+|[[Negros Occidental]]
+| [[1st National Assembly of the Philippines|1st Assembly]]
+| November 25, 1935
+| December 30, 1938
+|rowspan=2| [[Commonwealth of the Philippines|Commonwealth]]
+|-
+| 5
+|style="background:#98fb98"|
+|[[José Yulo]]
+|[[Nacionalista Party|Nacionalista]]
+|[[Negros Occidental]]
+| [[2nd National Assembly of the Philippines|2nd Assembly]]
+| January 24, 1939
+| December 30, 1941
+|-
+|colspan=8|''During the Japanese invasion of the Philippines, the Commonwealth went into exile in the United States and the National Assembly was dissolved. It was replaced by the unrelated National Assembly of the Japanese-sponsored Second Republic.''
+|rowspan=2| [[Military history of the Philippines during World War II|Second Republic]]
+|-
+| 6
+|style="background:#bc002d"|
+| [[Benigno Aquino, Sr.]]
+| [[KALIBAPI]]
+| [[Legislative districts of Tarlac#Lone District (defunct)|Tarlac At-Large]]
+| [[National Assembly of the Second Philippine Republic|National Assembly]]
+| October 17, 1943
+| February 2, 1944
+|-
+|colspan=8|''After the liberation, the winners of the [[Philippine general election, 1941|1941 elections]] were finally able to assume their positions.''
+| rowspan=4| [[Commonwealth of the Philippines|Commonwealth]]<br><small>(Restored)</small>
+|-
+| 7
+|style="background:#98fb98"|
+| [[José Zulueta]]
+| [[Nacionalista Party|Nacionalista]]
+| [[Legislative districts of Iloilo#1st District|Iloilo-1st]]
+| [[1st Commonwealth Congress]]
+| June 9, 1945
+| December 20, 1945
+|-
+|colspan=8|''After the restoration of the Commonwealth, new [[Philippine general election, 1946|elections]] were held to elect new members of the House of Representatives.''
+|-
+| rowspan=3 | 8
+| rowspan=3 style="background:#f0e68c"|
+| rowspan=3 | [[Eugenio Pérez]]
+| rowspan=3 | [[Liberal Party (Philippines)|Liberal]]
+| rowspan=3 | [[Legislative districts of Pangasinan#2nd District|Pangasinan-2nd]]
+| [[1st Congress of the Philippines|2nd Commonwealth Congress]]
+| May 25, 1946
+| July 4, 1946
+|-
+| [[First Congress of the Philippines|1st Congress]]
+| July 5, 1946
+| December 30, 1949
+| rowspan=10| [[History of the Philippines (1946–1965)|Third Republic]]
+|-
+| [[2nd Congress of the Philippines|2nd Congress]]
+| December 30, 1949
+| December 30, 1953
+|-
+| 9
+|style="background:#98fb98"|
+| [[José Laurel, Jr.]]
+| [[Nacionalista Party|Nacionalista]]
+| [[Legislative districts of Batangas#3rd District|Batangas-3rd]]
+| [[Third Congress of the Philippines|3rd Congress]]
+| January 25, 1954
+| December 30, 1957
+|-
+|rowspan=2| 10
+|rowspan=2 style="background:#98fb98"|
+|rowspan=2| [[Daniel Romualdez]]
+|rowspan=2| [[Nacionalista Party|Nacionalista]]
+|[[Legislative districts of Leyte#4th District|Leyte-4th]]
+| [[Fourth Congress of the Philippines|4th Congress]]
+| January 27, 1958
+| December 30, 1961
+|-
+|[[Legislative districts of Leyte#1st District|Leyte-1st]]
+|rowspan=2| [[5th Congress of the Philippines|5th Congress]]
+| January 22, 1962
+| March 9, 1962
+|-
+|rowspan=2| 11
+|rowspan=2 style="background:#f0e68c"|
+|rowspan=2| [[Cornelio Villareal]]
+|rowspan=2| [[Liberal Party (Philippines)|Liberal]]
+|rowspan=2| [[Legislative districts of Capiz#2nd District|Capiz-2nd]]
+| March 9, 1962
+| December 30, 1965
+|-
+|rowspan=2| [[Sixth Congress of the Philippines|6th Congress]]
+| January 17, 1966
+| February 2, 1967
+|-
+|rowspan=2| 12
+|rowspan=2 style="background:#98fb98"|
+|rowspan=2| [[José Laurel, Jr.]] (2nd time)
+|rowspan=2| [[Nacionalista Party|Nacionalista]]
+|rowspan=2| [[Legislative districts of Batangas#3rd District|Batangas-3rd]]
+| February 2, 1967
+| December 30, 1969
+|-
+|rowspan=2| [[Seventh Congress of the Philippines|7th Congress]]
+| January 26, 1970
+| April 1, 1971
+|-
+| 13
+|style="background:#f0e68c"|
+| [[Cornelio Villareal]] (2nd time)
+| [[Liberal Party (Philippines)|Liberal]]
+| [[Legislative districts of Capiz#2nd District|Capiz-2nd]]
+| April 1, 1971
+| September 23, 1972
+|-
+|colspan=8|''Following the [[Proclamation No. 1081|declaration of martial law]], the sitting president, [[Ferdinand Marcos]] ruled by decree and possessed legislative power until the election of the [[Interim Batasang Pambansa]] in 1978. The [[Interim Batasang Pambansa]] was replaced the [[Regular Batasang Pambansa]] in 1984.''
+|rowspan=2| [[History of the Philippines (1965–1986)|Second Dictatorship]]
+|-
+|rowspan=2| 14
+|rowspan=2 style="background:#FF0000"|
+|rowspan=2| [[Querube Makalintal]]
+|rowspan=3| [[Kilusang Bagong Lipunan|KBL]]
+|rowspan=2| [[Metro Manila|NCR]]
+|rowspan=2| [[Interim Batasang Pambansa]]
+|rowspan=2| June 12, 1978
+|rowspan=2| June 30, 1984
+|-
+|rowspan=3| [[History of the Philippines (1965–1986)|Fourth Republic]]
+|-
+| 15
+|style="background:#FF0000"|
+| [[Nicanor Yñiguez]]
+| [[Legislative district of Southern Leyte|Southern Leyte]]
+| [[Regular Batasang Pambansa]]
+| July 23, 1984
+| March 25, 1986
+|-
+|colspan=8|''After the [[People Power Revolution]] where Marcos was overthrown, president [[Corazon Aquino]] abolished the Regular Batasang Pambansa and ruled by decree (executive order and proclamations only), possessing legislative powers until after the [[Philippine constitutional referendum, 1987|ratification]] of the 1987 [[Constitution of the Philippines|Constitution]], where the bicameral Congress was restored.''
+|-
+| 16
+|style="background:#00008B"|
+| [[Ramon Mitra, Jr.]]
+| [[Laban ng Demokratikong Pilipino|LDP]]
+| [[Legislative districts of Palawan#2nd District|Palawan-2nd]]
+| [[8th Congress of the Philippines|8th Congress]]
+| July 27, 1987
+| June 30, 1992
+| rowspan="13" | [[History of the Philippines (1986–present)|Fifth Republic]]
+|-
+|rowspan=2| 17
+|rowspan=2 style="background:#B0E0E6;"|
+|rowspan=2| [[Jose de Venecia, Jr.]]
+| rowspan="2" | [[Lakas–CMD (1991)|Lakas]]
+|rowspan=2| [[Legislative districts of Pangasinan#4th District|Pangasinan-4th]]
+| [[9th Congress of the Philippines|9th Congress]]
+| July 27, 1992
+| June 30, 1995
+|-
+| [[10th Congress of the Philippines|10th Congress]]
+| July 24, 1995
+| June 30, 1998
+|-
+| 18
+| style="background:#ffa500;"|
+| [[Manny Villar]]
+| [[Laban ng Makabayang Masang Pilipino|LAMP]]
+| [[Legislative district of Las Piñas City|Las Piñas]]
+|rowspan=3| [[11th Congress of the Philippines|11th Congress]]
+| July 27, 1998
+| November 13, 2000
+|-
+| 19
+| style="background:#4AA02C;"|
+| [[Arnulfo Fuentebella]]
+| [[Nationalist People's Coalition|NPC]]
+| [[Legislative districts of Camarines Sur#3rd District|Camarines Sur-3rd]]
+| November 13, 2000
+| January 24, 2001
+|-
+| 20
+| style="background:#B0E0E6;"|
+| [[Feliciano Belmonte, Jr.]]
+| [[Lakas–CMD (1991)|Lakas]]
+| [[Legislative districts of Quezon City#4th District|Quezon City-4th]]
+| January 24, 2001
+| June 30, 2001
+|-
+|rowspan=3| 21
+|rowspan=3 style="background:#B0E0E6;"|
+|rowspan=3| [[Jose de Venecia, Jr.]] (2nd time)
+| rowspan="3" | [[Lakas–CMD (1991)|Lakas]]
+|rowspan=3| [[Legislative districts of Pangasinan#4th District|Pangasinan-4th]]
+|[[12th Congress of the Philippines|12th Congress]]
+| July 23, 2001
+| June 30, 2004
+|-
+|[[13th Congress of the Philippines|13th Congress]]
+| July 26, 2004
+| June 30, 2007
+|-
+|rowspan=2|[[14th Congress of the Philippines|14th Congress]]
+| July 23, 2007
+| February 5, 2008
+|-
+|22
+|style="background:#B0E0E6;"|
+|[[Prospero Nograles]]
+|[[Lakas–CMD (1991)|Lakas]]<br>[[Lakas-Kampi-CMD|Lakas-Kampi]]
+|[[Legislative districts of Davao City#1st District|Davao City-1st]]
+|February 5, 2008
+|June 30, 2010
+|-
+|rowspan=2|23
+|rowspan=2 style="background:#f0e68c"|
+|rowspan=2|[[Feliciano Belmonte, Jr.]] (2nd time)
+|rowspan=2|[[Liberal Party (Philippines)|Liberal]]
+|rowspan=2|[[Legislative districts of Quezon City#4th District|Quezon City-4th]]
+| [[15th Congress of the Philippines|15th Congress]]
+| July 26, 2010
+| June 30, 2013
+|-
+| [[16th Congress of the Philippines|16th Congress]]
+| July 22, 2013
+| June 30, 2016
+|-
+|24
+|style="background:#FFFF00;"|
+|[[Pantaleon Alvarez]]
+|[[PDP-Laban]]
+|[[Legislative districts of Davao del Norte|Davao del Norte-1st]]
+| [[17th Congress of the Philippines|17th Congress]]
+|July 25, 2016
+|present
+|-
+|}
+
+{| class="wikitable" style="text-align:center"
+|-
+!Party !! Total !! Terms
+|-
+|[[Nacionalista Party]] || 2 || 5
+|-
+|[[Liberal Party (Philippines)|Liberal Party]] || 2 || 4
+|-
+|[[Kilusang Bagong Lipunan]] || 2 || 2
+|-
+|[[Lakas-Christian Muslim Democrats]] || 1 || 5
+|-
+|[[Lakas-Kampi-CMD]] || 1 || 1
+|-
+|[[Laban ng Demokratikong Pilipino]] || 1 || 1
+|-
+|[[Laban ng Makabayang Masang Pilipino]] || 1 || 1
+|-
+|[[Nationalist People's Coalition]] || 1 || 1
+|-
+|[[Partido Demokratiko Pilipino-Lakas ng Bayan]] || 1 || 1
+|}
+
+{| class="wikitable" align="center"
+|- bgcolor="#CCCCCC"
+! Month of formation
+! Number of recorded storms
+|-
+| January || 5
+|-
+| February || 2
+|-
+| March || 1
+|-
+| April || 5
+|-
+| May || 49
+|-
+| November || 8
+|-
+| December || 17
+|-
+| '''Total''' || '''85'''
+|-
+! Source || Hurricane Research Division&lt;ref name="HURDAT"/&gt;&lt;ref name="META"/&gt;
+|}
+
+{| class="wikitable collapsible collapsed"
+!width=60px|Season
+!width=60px|League
+!width=30px|{{Tooltip|Pos|Position}}
+!width=30px|{{Tooltip|Pld|Games played}}
+!width=30px|{{Tooltip|W|Games won}}
+!width=30px|{{Tooltip|D|Games drawn}}
+!width=30px|{{Tooltip|L|Games lost}}
+!width=30px|{{Tooltip|GF|Goals for}}
+!width=30px|{{Tooltip|GA|Goals against}}
+!width=30px|{{Tooltip|GD|Goal difference}}
+!width=30px|{{Tooltip|Pts|Points}}
+!Top Goalscorer
+!width=90px|[[Estonian Cup|Cup]]
+|-align=center
+|2003
+|[[III Liiga]]
+|1
+|18
+|14
+|3
+|1
+|56
+|11
+| +45
+|45
+|align="left"|{{flagicon|EST}} [[Vitali Kosterev]] (20 goals)
+|
+|-align=center
+|2004
+|[[II Liiga]]
+|1
+|28
+|22
+|3
+|3
+|90
+|32
+| +58
+|69
+|align="left"|{{flagicon|EST}} [[Tiit Tikenberg]] (27 goals)
+|
+|-align=center
+|[[2005 Esiliiga|2005]]
+|[[Esiliiga]]
+|4
+|36
+|18
+|9
+|9
+|85
+|71
+| +14
+|63
+|align="left"|{{flagicon|EST}} [[Andrei Afanasov]] (15 goals)
+|
+|-align=center
+|[[2006 Esiliiga|2006]]
+|[[Esiliiga]]
+|3
+|36
+|20
+|6
+|10
+|84
+|63
+| +21
+|66
+|align="left"|{{flagicon|EST}} [[Tiit Tikenberg]] (16 goals)
+|
+|-align=center
+|[[2007 Meistriliiga|2007]]
+|[[Meistriliiga]]
+|6
+|36
+|13
+|4
+|19
+|44
+|74
+| −30
+|43
+|align="left"|{{flagicon|EST}} [[Tiit Tikenberg]] (20 goals)
+|
+|-align=center
+|[[2008 Meistriliiga|2008]]
+|[[Meistriliiga]]
+|8
+|36
+|6
+|8
+|22
+|37
+|70
+| −33
+|26
+|align="left"|{{flagicon|EST}} [[Tiit Tikenberg]] (10 goals)
+|[[2007–08 Estonian Cup|Quarterfinals]]
+|-align=center
+|[[2009 Meistriliiga|2009]]
+|[[Meistriliiga]]
+|10
+|36
+|4
+|4
+|28
+|32
+|89
+| –57
+|16
+|align="left"|{{flagicon|EST}} [[Vahur Vahtramäe]] (6 goals)
+|[[2008–09 Estonian Cup|R4]]
+|-align=center
+|[[2010 Esiliiga|2010]]
+|[[Esiliiga]]
+|5
+|36
+|17
+|6
+|13
+|67
+|65
+| +2
+|53
+|align="left"|{{flagicon|EST}} [[Ilja Monakov]] (12 goals)
+|[[2009–10 Estonian Cup|R4]]
+|-align=center
+|[[2011 Esiliiga|2011]]
+|[[Esiliiga]]
+|1
+|36
+|21
+|10
+|5
+|102
+|39
+| +63
+|73
+|align="left"|{{flagicon|EST}} [[Rimo Hunt]] (35 goals)
+|[[2010–11 Estonian Cup|Quarterfinals]]
+|-align=center
+|[[2012 Meistriliiga|2012]]
+|[[Meistriliiga]]
+|9
+|36
+|4
+|9
+|23
+|27
+|87
+| −60
+|21
+|align="left"|{{flagicon|JPN}} [[Hiroyuki Mitsuyama]] (5 goals)
+|[[2011–12 Estonian Cup|R4]]
+|-align=center
+|[[2013 Meistriliiga|2013]]
+|[[Meistriliiga]]
+|8
+|36
+|10
+|4
+|22
+|35
+|77
+| −42
+|34
+|align="left"|{{flagicon|EST}} [[Maksim Paponov]]&lt;br&gt;{{flagicon|BIH}} [[Aladin Šišić]] (8 goals)
+||[[2012–13 Estonian Cup|R2]]
+|-align=center
+|[[2014 Meistriliiga|2014]]
+|[[Meistriliiga]]
+|10
+|36
+|3
+|3
+|30
+|21
+|146
+| −125
+|12
+|align="left"|{{flagicon|GEO}} [[Lasha Omanidze]] (7 goals)
+|[[2013–14 Estonian Cup|R2]]
+|-align=center
+|[[2015 Esiliiga|2015]]
+|[[Esiliiga]]
+|6
+|36
+|13
+|7
+|16
+|47
+|59
+| −12
+|46
+|align="left"|{{flagicon|EST}} [[Silver Alex Kelder]] (14 goals)
+|[[2014–15 Estonian Cup|R4]]
+|}
+
+{| class="wikitable" style="text-align:center"
+!width=30px |Rank
+!width=200px|Player
+!width=200px|Career
+!width=30px |Games
+|-
+|1||align=left|{{flagicon|EST}} '''[[Aleksei Savitski]]||2009–||99
+|-
+|2||align=left|{{flagicon|EST}} [[Edwin Stüf]]||2008–09, 2011–14||95
+|-
+|3||align=left|{{flagicon|EST}} [[Vahur Vahtramäe]]||2005–09||90
+|-
+|4||align=left|{{flagicon|EST}} [[Johannes Kukebal]]||2009–11, 2012, 2013–14||83
+|-
+|5||align=left|{{flagicon|EST}} [[Janno Hermanson]]||2006–09||81
+|-
+|6||align=left|{{flagicon|EST}} [[Rasmus Tomson]]||2009, 2011–13||75
+|-
+|7||align=left|{{flagicon|EST}} '''[[Marek Kahr]]||2004–||72
+|-
+|8||align=left|{{flagicon|USA}} '''[[Sean Tremaine Whalen|Sean Whalen]]||2010–||69
+|-
+|9||align=left|{{flagicon|EST}} [[Mario Mõistlik]]||2005–10||67
+|-
+|10||align=left|{{flagicon|EST}} [[Tiit Tikenberg]]||2004–08, 2010||66
+|-
+|}

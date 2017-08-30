@@ -1,0 +1,208 @@
+<!---
+NOTE: PLEASE MAINTAIN SIMPLE WORDING WIKILINKED TO DETAILS - SEE => "[[Template talk:Nature timeline#Best wording]]" (or see => https://en.wikipedia.org/wiki/Template_talk:Nature_timeline#Best_wording_for_.22.7B.7BNature_timeline.7D.7D.22_events.3F ) - Enjoy! :) [[User:Drbogdan|Drbogdan]] ([[User talk:Drbogdan|talk]]) 01:00, 20 August 2016 (UTC)
+--->{{Graphical timeline
+ | <!--- you MUST remove any lines you don't need --->
+
+ | help=off
+ | link-o=Human timeline
+
+ | scale-increment=1.000
+ | plot-colour=#ffc966
+l
+
+ | title=[[Timeline of human evolution|Human timeline]]
+
+ | bar1-from=-10.000
+ | bar1-to=-2.800
+ | bar1-text='''[[Timeline of human evolution#Hominidae|Human-like<br>apes]]
+ | bar1-colour=#ffa500
+ | bar1-left=0.0
+ | bar1-nudge-right=-0.3
+ | bar1-nudge-down=-5.3
+ 
+ | bar2-from=-9.800
+ | bar2-to=-9.700
+ | bar2-text=<small>''[[Nakalipithecus]]
+ | bar2-colour=#ffa500
+ | bar2-left=0.1
+ | bar2-nudge-down=0
+ | bar2-nudge-left=0.5
+
+ | bar3-from=-9.000
+ | bar3-to=-8.900 
+ | bar3-text=<small>''[[Ouranopithecus]]''</small>
+ | bar3-colour=#ffa500
+ | bar3-left=0.1
+ | bar3-nudge-down=0
+ | bar3-nudge-left=0.3
+
+ | bar4-from=-7.000
+ | bar4-to=-6.900
+ | bar4-text=<small>''[[Sahelanthropus]]''</small>
+ | bar4-colour=#ffa500
+ | bar4-left=0.1
+ | bar4-nudge-down=0
+ | bar4-nudge-left=0.3
+
+ | bar5-from=-6.000
+ | bar5-to=-5.900
+ | bar5-text=<small>''[[Orrorin]]''</small>
+ | bar5-colour=#ffa500
+ | bar5-left=0.1
+ | bar5-nudge-down=0
+ | bar5-nudge-left=2.0
+
+ | bar6-from=-4.400
+ | bar6-to=-4.300
+ | bar6-text=<small>''[[Ardipithecus]]''</small>
+ | bar6-colour=#ffa500
+ | bar6-left=0.1
+ | bar6-nudge-down=0
+ | bar6-nudge-left=1.0
+
+ | bar7-from=-3.600
+ | bar7-to=-3.500
+ | bar7-text=<small>''[[Australopithecus]]''</small>
+ | bar7-colour=#ffa500
+ | bar7-left=0.1
+ | bar7-nudge-down=0
+ | bar7-nudge-left=0
+
+ | bar8-from=-2.800
+ | bar8-to=-1.500
+ | bar8-text='''''[[Homo habilis]]'''''
+ | bar8-colour=#ffb732
+ | bar8-left=-0.0
+ | bar8-nudge-right=0.4
+ | bar8-nudge-down=0.3
+
+ | bar9-from=-1.800
+ | bar9-to=-0.070
+ | bar9-text='''''[[Homo erectus]]'''''
+ | bar9-colour=#ffc966
+ | bar9-left=0.1
+ | bar9-nudge-right=0.1
+ | bar9-nudge-down=1.0
+
+ | bar10-from=-0.600
+ | bar10-to=-0.040
+ | bar10-text='''''[[Neanderthal]]'''''
+ | bar10-colour=#ffdb99
+ | bar10-left=0.1
+ | bar10-nudge-right=0.4<!--- -0.6 --->
+
+ | bar10-nudge-down=0.3
+
+ | bar11-from=-0.195
+ | bar11-to=-0.000
+ | bar11-text='''''[[Anatomically modern human|Homo sapiens]]'''''
+ | bar11-colour=#ffff00
+ | bar11-left=0.2
+ | bar11-nudge-right=0.0
+ | bar11-nudge-down=0.0
+
+ | bar12-from=-0.0700
+ | bar12-to=-0.000
+ | bar12-text=
+ | bar12-colour=#ffff00
+ | bar12-left=0.0
+ | bar12-right=0.1
+ | bar12-nudge-right=0.0
+ | bar12-nudge-down=0.0
+
+ | bar13-from=-0.0400
+ | bar13-to=-0.000
+ | bar13-text=
+ | bar13-colour=#ffff00
+ | bar13-left=0.1
+ | bar13-right=0.2
+ | bar13-nudge-right=0.0
+ | bar13-nudge-down=0.0
+
+<!---
+ | note1-at=-13.000
+ | note1=<div style="line-height:9pt"><small>[[Pierolapithecus|Pierolapithecus catalaunicus]]</small></div>
+
+ | note2-at=-12.200
+ | note2=<div style="line-height:9pt"><small>[[Sivapithecus]]</small></div>
+--->
+
+ | note3-at=-10.000
+ | note3=<div style="line-height:9pt">[[Timeline of human evolution#Hominidae|Earlier apes]]</div>
+
+ | note4-at=-7.000
+ | note4=<div style="line-height:9pt">[[Sahelanthropus#Fossils|Earliest bipedal]]</div>
+
+<!---
+ | note5-at=-7.000
+ | note5=<div style="line-height:9pt"><small>''[[Sahelanthropus|Sahelanthropus tchadensis]]''</small></div>
+
+ | note6-at=-6.000
+ | note6=<div style="line-height:9pt"><small>''[[Orrorin|Orrorin tugenensis]]''</small></div>
+
+ | note7-at=-4.400
+ | note7=<div style="line-height:9pt"><small>''[[Ardipithecus|Ardipithecus ramidus]]''</small></div>
+--->
+
+ | note8-at=-4.050
+ | note8=<div style="line height:9pt">[[Human skeletal changes due to bipedalism|Early bipedal]]</div>
+
+<!---
+ | note9-at=-3.600
+ | note9=<div style="line-height:9pt"><small>''[[Australopithecus afarensis]]''</small></div>
+--->
+
+ | note10-at=-3.300
+ | note10=<div style="line-height:9pt">[[Stone Age#Beginning of the Stone Age|Earliest stone tools]]</div>
+
+<!---
+ | note11-at=-2.800
+ | note11=<div style="line-height:9pt">[[Homo habilis#Interpretations|Early stone tools]]</div>
+--->
+
+ | note12-at=-1.800
+ | note12=<div style="line-height:9pt">[[<!---Human#Evidence from the fossil record--->Out of Africa I|Earliest exit<br>from Africa]]</div>
+
+ | note13-at=-1.500
+ | note13=<div style="line-height:9pt">[[Control of fire by early humans#Lower Paleolithic Evidence<!---Homo erectus#Use of fire--->|Earliest fire use]]</div>
+
+ | note14-at=-0.790
+ | note14=<div style="line-height:9pt">[[Cooking#History|Earliest cooking]]</div>
+
+ | note15-at=-0.500
+ | note15=<div style="line-height:9pt">[[Clothing#Origin of clothing|Earliest clothes]]</div>
+
+<!---
+ | note16-at=-0.200
+ | note16=<div style="line-height:9pt">[[Homo sapiens idaltu|Human Anatomy]]</div>
+--->
+
+ | note17-at=-0.050
+ | note17=<div style="line-height:9pt">[[Behavioral modernity|Modern humans]]</div>
+
+ | note18=<center><span style="display:block">[[Pleistocene|<br>P<br>l<br>e<br>i<br>s<br>t<br>o<br>c<br>e<br>n<br>e]]</span></center>
+ | note18-at=-0.00
+ | note18-nudge-left=13
+ | note18-remove-arrow=yes
+
+ | note19=<center><span style="display:block">[[Pliocene|<br>P<br>l<br>i<br>o<br>c<br>e<br>n<br>e]]</span></center>
+ | note19-at=-3.50
+ | note19-nudge-left=13
+ | note19-remove-arrow=yes
+
+ | note20=<center><span style="display:block">[[Miocene|<br>M<br>i<br>o<br>c<br>e<br>n<br>e]]</span></center>
+ | note20-at=-6.75
+ | note20-nudge-left=13
+ | note20-remove-arrow=yes
+
+ | note21=<center><span style="display:block">[[Hominidae|<br>H<br><br>o<br><br>m<br><br>i<br><br>n<br><br>i<br><br>d<br><br>s]]</span></center>
+ | note21-at=-4.20
+ | note21-nudge-left=0
+ | note21-nudge-right=-4.20
+ | note21-remove-arrow=yes
+
+| caption=[[Cartesian coordinate system#Two dimensions|Axis scale]]: [[Geologic time scale|millions of years]].<br>''<small>also see {{tn|Life timeline}} and {{tn|Nature timeline}}</small>''
+
+}}<noinclude>
+{{documentation}}
+</noinclude>

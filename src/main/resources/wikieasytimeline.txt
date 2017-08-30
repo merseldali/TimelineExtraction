@@ -1,0 +1,204 @@
+== Charts examples ==
+Two simple examples of what is possible. For more extensive examples see [[Template:Timeline WW II - Pacific Theatre]], [[Template:Timeline_History_of_Computing]], [[:de:Template:Zeitleiste Tour-de-France-Sieger]]. 
+
+A nice example of a diagram that is not a timeline at all is [[:en:Template:Vocal and instrumental pitch ranges|Vocal and instrumental pitch ranges]]. 
+
+<table><tr>
+<td valign=top>
+
+<timeline>
+ImageSize  = width:160 height:550
+PlotArea   = width:50 height:530 left:50 bottom:10
+
+DateFormat = yyyy
+Period     = from:1919 till:1991
+TimeAxis   = orientation:vertical
+ScaleMajor = unit:year increment:5 start:1920
+
+# there is no automatic collision detection,
+# so shift texts up or down manually to avoid overlap
+
+Define $dx = 25 # shift text to right side of bar
+
+PlotData=
+  bar:Leaders color:red width:25 mark:(line,white) align:left fontsize:S
+
+  from:start till:1922 shift:($dx,15)   text:Vladimir~Ilyich~[[Lenin]]
+  from:1922  till:1953 shift:($dx,5)    text:[[Stalin|Josef Stalin]]
+  from:1953  till:1964 shift:($dx,5)    text:Nikita~[[Khrushchev]]
+  from:1964  till:1982 shift:($dx,5)    text:Leonid~[[Brezhnev]]
+  from:1982  till:1984 shift:($dx,-12)  text:Yuri~[[Andropov]]
+  from:1984  till:1985 shift:($dx,4)    text:Konstantin~[[Chernenko]] fontsize:XS
+  from:1985  till:end  shift:($dx,10)   text:Mikhail~[[Gorbachev]]
+</timeline>
+</td>
+
+<td>&nbsp;&nbsp;</td>
+<td valign=top>
+
+<timeline>
+ImageSize  = width:800 height:100
+PlotArea   = width:720 height:75 left:65 bottom:20
+AlignBars  = justify
+
+Colors =
+  id:epoch  value:rgb(0.7,0.7,1) # light yellow
+  id:period value:rgb(1,0.7,0.7) # light red
+  id:age    value:rgb(0.7,1,0.7) # light green
+  id:era    value:rgb(1,1,0.7)   # light blue
+  id:eon    value:rgb(1,0.7,1)   # light purple
+  id:black  value:black
+
+Period      = from:-4500 till:0
+TimeAxis    = orientation:horizontal
+ScaleMajor  = unit:year increment:500 start:-4500
+ScaleMinor  = unit:year increment:100 start:-4500
+
+Define $markred = text:"*" textcolor:red shift:(0,3) fontsize:10
+
+PlotData=
+  align:center textcolor:black fontsize:8 mark:(line,black) width:25 shift:(0,-5)
+
+  bar:eon color:eon
+
+  at:      0   align:right  $markred
+  at:   -545   align:left   $markred
+  from: -545   till:    0   text:[[Phanerozoic]]
+  from:-4500   till:    0   text:[[Precambrian]]
+
+  bar:era color:era
+
+  from:  -64.3 till:    0   text:C~z shift:(0,1.5)
+  from: -251.1 till:  -64.3 text:[[Mesozoic|Meso~zoic]] shift:(0,1.5)
+  from: -545   till: -251.1 text:[[Paleozoic|Paleo~zoic]] shift:(0,1.5)
+  from:-4500   till: -545   text:[[Proterozoic]]
+
+  bar:period color:period
+
+  fontsize:6
+  from:   -1.6 till:    0
+  from:  -64.3 till:   -1.6
+  from: -146   till:  -64.3
+  from: -208   till: -146
+  from: -251.1 till: -208
+  from: -286   till: -251.1
+  from: -360   till: -286
+  from: -408.5 till: -360
+  from: -443.5 till: -408.5
+  from: -490   till: -443.5
+  from: -545   till: -490
+
+  fontsize:8
+  from: -900   till:  -545  text:[[Neoproterozoic|Neoprote-~rozoic]] shift:(0,1.8)
+  from:-1600   till:  -900  text:[[Mesoproterozoic]]
+  from:-2500   till: -1600  text:[[Paleoproterozoic]]
+  from:-3800   till: -2500  text:[[Archaean]]
+  from: start  till: -3800  text:[[Hadean]]
+</timeline>
+
+<timeline>
+ImageSize  = width:800 height:120
+PlotArea   = width:720 height:95 left:65 bottom:20
+AlignBars  = justify
+
+Colors =
+    id:epoch  value:rgb(0.7,0.7,1) # light yellow
+    id:period value:rgb(1,0.7,0.7) # light red
+    id:age    value:rgb(0.7,1,0.7) # light green
+    id:era    value:rgb(1,1,0.7)   # light blue
+    id:eon    value:rgb(1,0.7,1)   # light purple
+    id:filler value:gray(0.8)      # background bar
+    id:black  value:black
+
+Period      = from:-545 till:0
+TimeAxis    = orientation:horizontal
+ScaleMajor  = unit:year increment:100 start:-500
+ScaleMinor  = unit:year increment:10  start:-540
+
+Define $markred   = text:"*" textcolor:red   shift:(0,3) fontsize:10
+Define $markgreen = text:"*" textcolor:green shift:(0,3) fontsize:10
+
+PlotData=
+  align:center textcolor:black fontsize:8 mark:(line,black) width:25 shift:(0,-5)
+
+  bar:eon color:eon
+  at:      0   align:right  $markred
+  at:   -545   align:left   $markred
+  from: -545   till:    0   text:[[Phanerozoic]]
+  bar:era color:era
+  at:      0   align:right  $markgreen
+  at:    -64.3 align:left   $markgreen
+  from:  -64.3 till:    0   text:[[Cenozoic]]
+  from: -251.1 till:  -64.3 text:[[Mesozoic]]
+  from: -545   till: -251.1 text:[[Paleozoic]]
+
+  bar:period color:period fontsize:8
+  from:   -1.6 till:    0
+  from:  -64.3 till:   -1.6 text:[[Tertiary]]
+  from: -146   till:  -64.3 text:[[Cretaceous]]
+  from: -208   till: -146   text:[[Jurassic]]
+  from: -251.1 till: -208   text:[[Triassic]]
+  from: -286   till: -251.1 text:[[Permian]]
+  from: -360   till: -286   text:[[Carboniferous]]
+  from: -408.5 till: -360   text:[[Devonian]]
+  from: -443.5 till: -408.5 text:[[Silurian]]
+  from: -490   till: -443.5 text:[[Ordovician]]
+  from: -545   till: -490   text:[[Cambrian]]
+
+  bar:age color:age fontsize:6
+  from: start  till:  end
+  from: -23    till:  -1.6  text:[[Neogene|Neo-~gene]]             shift:(0,0.5)
+  from: -64.3  till: -23    text:[[Paleogene|Paleo~gene]]          shift:(0,0.5)
+  from: -286   till: -251.1 # mark end of Paleozoic
+  from: -325   till:  -286  text:[[Pennsylvanian|Pennsyl-~vanian]] shift:(0,0.5)
+  from: -360   till:  -325  text:[[Mississippian|Missis-~sippian]] shift:(0,0.5)
+</timeline>
+
+<timeline>
+ImageSize = width:800 height:120
+PlotArea  = width:720 height:95 left:65 bottom:20
+AlignBars = justify
+
+Colors =
+  id:epoch  value:rgb(0.7,0.7,1) # light yellow
+  id:period value:rgb(1,0.7,0.7) # light red
+  id:age    value:rgb(0.7,1,0.7) # light green
+  id:era    value:rgb(1,1,0.7)   # light blue
+  id:black  value:black
+
+Period     = from:-65.5 till:0
+TimeAxis   = orientation:horizontal
+ScaleMajor = unit:year increment:10 start:-60
+ScaleMinor = unit:year increment:1  start:-65
+
+Define $markgreen = text:"*" textcolor:green shift:(0,3) fontsize:10
+
+PlotData=
+  align:center textcolor:black fontsize:8 mark:(line,black) width:25 shift:(0,-5)
+
+  bar:era color:era
+  at:     0  align:right $markgreen
+  at: start  align:left  $markgreen
+  from:start  till:  0    text:[[Cenozoic]]
+
+  bar:period color:period
+  from: -1.6  till:  0    text:[[Quaternary|Qua~ter~nary]] fontsize:6 align:left shift:(-7,5)
+  from:start  till: -1.6  text:[[Tertiary]]
+
+  bar:age color:age
+  from: -1.6  till:  0
+  from: -23   till:  -1.6 text:[[Neogene]]
+  from:start  till: -23   text:[[Paleogene]]
+
+  bar:epoch color:epoch
+  from: -0.1  till:  0
+  from: -1.6  till: -0.1  text:[[Pleistocene|P]]
+  from: -5    till: -1.6  text:[[Pliocene|Plio~cene]] shift:(0,1) fontsize:6
+  from:-23    till: -5    text:[[Miocene]]
+  from:-38    till:-23    text:[[Oligocene]]
+  from:-55    till:-38    text:[[Eocene]]
+  from:start  till:-55    text:[[Paleocene]]
+</timeline>
+
+</td>
+</tr></table>

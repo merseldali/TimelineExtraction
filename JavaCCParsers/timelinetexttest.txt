@@ -1,0 +1,43 @@
+===2010s===
+{|class="wikitable" style="width:100%;"
+|-
+!style="width:6%"|Year||style="width:8%"|Date||style="width:86%"|Event
+|-
+| style="text-align:center;" rowspan="1"|2016||align=center|May&nbsp;2|| style="background:#eef;"|The '''[[Czech Republic]]''' votes to adopt '''[[Name of the Czech Republic|Czechia]]''' as its official short-form name in English.<ref>"Vláda schválila doplnení jednoslovného názvu Cesko v cizích jazycích do databází OSN." Last modified May 5, 2016. http://www.mzv.cz/jnp/cz/udalosti_a_media/tiskove_zpravy/x_2016_05_02_vlada_schvalila_czechia.html.</ref> [[Prague]] remains the capital.
+|-
+| style="text-align:center;" rowspan="2"|2015||align=center|December&nbsp;11|| style="background:#dfd;"|The [[Republic of The Gambia]] changes its name to the '''[[The Gambia|Islamic Republic of The Gambia]]'''.<ref name="AJ" >Rifai, Ryan (12 December 2015) [http://www.aljazeera.com/news/2015/12/gambia-president-declares-islamic-statehood-151212153025585.html "Gambia's president declares Islamic statehood"]. [[Al-Jazeera]]. Retrieved 2 September 2016.</ref> [[Banjul]] remains the capital.
+|-
+|align=center|June&nbsp;6|| style="background:#fee;"|'''[[India]]''' and '''[[Bangladesh]]''' exchange [[India–Bangladesh enclaves|162 enclaves]] along their borders.
+|-
+| style="text-align:center;" rowspan="3"|2014||align=center|March&nbsp;21|| style="background:#eef;"|The [[Republic of Crimea (country)|Republic of Crimea]] [[Accession of Crimea to the Russian Federation|accedes]] to the '''[[Russian Federation]]''' as [[Federal subjects of Russia|two separate federal entities]]: the [[Republics of Russia|Republic of]] [[Republic of Crimea|Crimea]] and the [[Federal cities of Russia|city of federal significance]] [[Sevastopol]]. [[Simferopol]] yields to [[Moscow]] as the federal capital. Ukraine itself and much of the international community maintain that Crimea is illegally occupied by Russia and legally remains an integral region of Ukraine.
+|-
+| style="text-align:center;" rowspan="2"|March&nbsp;17|| style="background:#eef;"|The [[Russian Federation]] recognizes the independence of the '''[[Republic of Crimea (country)|Republic of Crimea]]''' from [[Ukraine]]. Ukraine itself, along with the [[Mejlis of the Crimean Tatar People]], and the [[international community]] maintain that Crimea and [[Sevastopol]] are illegally occupied by Russia and that both territories remain ''[[de jure]]'' integral parts of Ukraine.
+|-
+| style="background:#eef;"|The [[Autonomous Republic of Crimea]] unilaterally proclaims its independence from [[Ukraine]] and changes its name to the '''[[Republic of Crimea (country)|Republic of Crimea]]'''. Crimea unilaterally subsumes the independent city of '''[[Sevastopol]]'''. [[Simferopol]] remains the capital.
+|-
+| style="text-align:center;" rowspan="2"|2013||align=center|October&nbsp;24|| style="background:#dfd;"|The [[Republic of Cape Verde]] decrees the official English-language rendering of its name to be the '''[[Republic of Cabo Verde]]''',<ref>[http://www.panapress.com/Cape-Verde-changes-name-to--Cabo-Verde---13-885619-0-lang2-index.html Cape Verde changes name to "Cabo Verde"]</ref> following precedents set by [[Côte d'Ivoire]] and [[East Timor|Timor-Leste]] (neither of which use English as an [[official language]]). [[Praia]] remains the name of its capital.
+|-
+|align=center|January&nbsp;7|| style="background:#dfd;"|[[Libya]] changes its name to the '''[[State of Libya]]'''.<ref>[http://english.ruvr.ru/2013_01_09/Libyan-Parliament-approves-decision-to-give-up-Great-Jamahiriya-name/ Libyan Parliament approves decision to give up Great Jamahiriya name]</ref> [[Tripoli]] remains the capital.
+|-
+| style="text-align:center;" rowspan="4"|2012||align=center|August&nbsp;20|| style="background:#dfd;"|The [[Somali Republic]] changes its name to the '''[[Federal Republic of Somalia]]'''. [[Mogadishu]] remains the capital.
+|-
+|align=center|July&nbsp;12|| style="background:#dfd;"|The [[State of Azawad]] capitulates and is reabsorbed by the '''[[Republic of Mali]]'''. [[Timbuktu]] yields to [[Bamako]] as the capital.
+|-
+|align=center|April&nbsp;6|| style="background:#dfd;"|[[Azawad]] proclaims its independence from the [[Republic of Mali]] as the '''[[State of Azawad]]'''. [[Timbuktu]] is the capital. 
+|-
+|align=center|January&nbsp;1|| style="background:#eef;"|The [[Republic of Hungary]] changes its name to '''[[Hungary]]'''. [[Budapest]] remains the capital. 
+|-
+| style="text-align:center;" rowspan="4"|2011||align=center|September&nbsp;16|| style="background:#dfd;"|'''[[Libya]]''' supersedes the [[Great Socialist People's Libyan Arab Jamahiriya]]. [[Tripoli]] remains the capital. 
+|-
+|align=center|July&nbsp;9|| style="background:#dfd;"|The [[Southern Sudan]] gains independence from [[Sudan]] as the '''[[Republic of South Sudan]]''' after a referendum the previous January. [[Juba]] is the capital.
+|-
+|align=center|March&nbsp;31|| style="background:#dfd;"|The [[French Republic]] accepts [[Mayotte]] in the [[Comoro Islands]] as the '''[[Mayotte|Department of Mayotte]]'''. [[Mamoudzou]] is the capital.
+|-
+|align=center|February&nbsp;2|| style="background:#eff;"|The [[Fiji|Republic of the Fiji Islands]] changes its name back to the '''[[Fiji|Republic of Fiji]]'''. [[Suva]] remains the capital.
+|-
+| style="text-align:center;" rowspan="3"|2010||align=center|October&nbsp;21|| style="background:#fee;"|The [[Union of Myanmar]] ([[Burma]]) changes its name to the '''[[Republic of the Union of Myanmar]]'''. [[Naypyidaw]] remains the capital.
+|-
+|align=center|October&nbsp;10|| style="background:#ffd;"|The [[Kingdom of the Netherlands]] [[Dissolution of the Netherlands Antilles|dissolves]] the [[Netherlands Antilles]] and makes '''[[Curaçao]]''' and '''[[Sint Maarten]]''' two of its four constituent countries. [[Willemstad]] and [[Philipsburg, Sint Maarten|Philipsburg]] are the respective capitals. [[Bonaire]], [[Saba]], and [[Sint Eustatius]] become [[BES islands|special municipalities]] of the [[Netherlands]].
+|-
+|align=center|July&nbsp;22|| style="background:#eef;"|The [[International Court of Justice]] rules that the independence of the '''[[Republic of Kosovo]]''' from the [[Republic of Serbia]] does not violate international law. [[Priština]] remains the capital.
+|}

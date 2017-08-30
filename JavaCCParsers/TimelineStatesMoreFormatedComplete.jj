@@ -1,0 +1,406 @@
+/* Copyright (c) 2006, Sun Microsystems, Inc.
+ * All rights reserved.
+ * 
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ * 
+ *     * Redistributions of source code must retain the above copyright notice,
+ *       this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above copyright
+ *       notice, this list of conditions and the following disclaimer in the
+ *       documentation and/or other materials provided with the distribution.
+ *     * Neither the name of the Sun Microsystems, Inc. nor the names of its
+ *       contributors may be used to endorse or promote products derived from
+ *       this software without specific prior written permission.
+ * 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
+ * THE POSSIBILITY OF SUCH DAMAGE.
+ */
+//| <SHIFT: ("shift:("(.)+,(.)+")")>
+
+options
+{
+	IGNORE_CASE=true;
+	LOOKAHEAD=4;
+	FORCE_LA_CHECK=false;
+	STATIC=false;
+	UNICODE_INPUT = true;
+    JAVA_UNICODE_ESCAPE = false;
+	DEBUG_TOKEN_MANAGER=false;
+	DEBUG_PARSER=false;
+}
+
+PARSER_BEGIN(EasyTimeLine)
+
+/** Simple brace matcher. */
+import java.util.concurrent.LinkedBlockingQueue;
+
+public class EasyTimeLine {
+
+	static InfoDate info = new InfoDate();
+	static LinkedBlockingQueue<InfoDate> outqueue = new LinkedBlockingQueue<InfoDate>();
+	static String start = "";
+	static String end = "";
+	static String dateformat = "";
+	static String page="";
+  /** Main entry point. */
+  public static void main(String args[]) throws ParseException {
+    EasyTimeLine parser = new EasyTimeLine(System.in);
+    parser.Start();
+	for (InfoDate a : outqueue){
+		System.out.println(a.toString());
+	}
+  }
+  
+  public void setPageTitle(String page){
+	  this.page = page;
+  }
+
+}
+
+
+PARSER_END(EasyTimeLine)
+SKIP :
+{
+	<" ">
+|	<  ~[] >
+}
+
+TOKEN :
+{
+	<PERIOD: "Period"(" ")*("=")> : TIMELINE_START
+|	<DATEFORMAT: "DateFormat"(" ")*("=")> : TIMELINE_DATEFORMAT
+|	<FROM: "from"(" ")*(":")> : TIMELINE_DATA_FROM
+|	<AT: "at"(" ")*(":")> : TIMELINE_DATA_AT
+}
+
+<TIMELINE_START> SKIP :
+{
+	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<" ">
+}
+
+<TIMELINE_START> TOKEN :
+{
+  <FROM_START: "from:">
+| <TILL_START: "till:">
+| <YEAR_START: (("-")?(["0"-"9"]){1,10}(".")?(["0"-"9"]){0,10}) | "start" | "end">
+| <DATE_START: ((["0"-"9"]){1,4}("/")(["0"-"9"]){1,4}("/")(["0"-"9"]){1,4}) | "start" | "end" | "0">
+}
+
+<TIMELINE_DATEFORMAT> SKIP :
+{
+	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<" ">
+}
+
+<TIMELINE_DATEFORMAT> TOKEN :
+{
+  <FORMAT_DATEFORMAT: "dd/mm/yyyy" | "mm/dd/yyyy" | "yyyy" | "mm/yyyy">
+}
+
+<TIMELINE_DATA_FROM> SKIP :
+{
+  	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<" ">
+|	< ~["0"-"9"] >
+}
+
+<TIMELINE_DATA_FROM> TOKEN :
+{
+  <TILL_DATA_FROM: "till:"> : TIMELINE_DATA_TILL
+| <YEAR_DATA_FROM: (("-")?(["0"-"9"]){1,10}(".")?(["0"-"9"]){0,10}) | "0">
+| <DATE_DATA_FROM: ((["0"-"9"]){1,4}("/")(["0"-"9"]){1,4}("/")(["0"-"9"]){1,4}) | "0">
+| <SPECIAL_DATA_FROM: "start" | "end">
+}
+
+<TIMELINE_DATA_AT> SKIP :
+{
+  	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<" ">
+|	< ~["0"-"9", "/"] >
+}
+
+<TIMELINE_DATA_AT> TOKEN :
+{
+  <YEAR_DATA_AT: (("-")?(["0"-"9"]){1,10}(".")?(["0"-"9"]){0,10}) | "0">  : TIMELINE_DATA_AT_TOTEXT
+| <DATE_DATA_AT: ((["0"-"9"]){1,4}("/")(["0"-"9"]){1,4}("/")(["0"-"9"]){1,4}) | "0"> : TIMELINE_DATA_AT_TOTEXT
+| <SPECIAL_DATA_AT: "start" | "end">
+}
+
+<TIMELINE_DATA_AT_TOTEXT> SKIP :
+{
+  	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<" ">
+|	< ~[] >
+}
+
+<TIMELINE_DATA_AT_TOTEXT> TOKEN :
+{
+  <TEXT_DATA_AT_TOTEXT: "text:"> : TIMELINE_DATA_TEXT
+}
+
+
+<TIMELINE_DATA_TILL> SKIP :
+{
+  	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<" ">
+|	< ~["0"-"9"] >
+}
+
+<TIMELINE_DATA_TILL> TOKEN :
+{
+	<YEAR_DATA_TILL: (("-")?(["0"-"9"]){1,10}(".")?(["0"-"9"]){1,10}) | "0"> : TIMELINE_DATA_TILL_TOTEXT
+| 	<DATE_DATA_TILL: ((["0"-"9"]){1,4}("/")(["0"-"9"]){1,4}("/")(["0"-"9"]){1,4}) | "0"> : TIMELINE_DATA_TILL_TOTEXT
+|	<SPECIAL_DATA_TILL: "start" | "end"> : TIMELINE_DATA_TILL_TOTEXT
+}
+
+<TIMELINE_DATA_TILL_TOTEXT> SKIP :
+{
+  	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<" ">
+|	< ~[] >
+}
+
+<TIMELINE_DATA_TILL_TOTEXT> TOKEN :
+{
+  <TEXT_DATA_TILL_TOTEXT: "text:"> : TIMELINE_DATA_TEXT
+}
+
+
+<TIMELINE_DATA_TEXT> SKIP :
+{
+  	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<"[["> : TIMELINE_DATA_TEXT_IN
+|	<" ">
+|	< ~[] >
+}
+
+<TIMELINE_DATA_TEXT_IN> SKIP :
+{
+  	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<"]]"> : TIMELINE_DATA_TEXT
+|	<" ">
+|	< ~["0"-"9"] >
+}
+
+<TIMELINE_DATA_TEXT_IN> TOKEN :
+{
+	<WORDS_DATA_TEXT_IN: ((["a"-"z" , "~" , "#", "(", ")", "-", ".", ",", " ", "<", ">", ";"] | ["0"-"9"] | "é"| "è"| "ë"| "ê"| "à"| "ä"| "â"| "ç"| "ù"| "ü"| "û"| "î"| "ö"| "ô"| "Æ" | "&")+("|")?(["a"-"z", "~" ,"#", "(", ")", "-", ".", ",", " ", "<", ">", ";"] | ["0"-"9"] | "é"| "è"| "ë"| "ê"| "à"| "ä"| "â"| "ç"| "ù"| "ü"| "û"| "î"| "ö"| "ô"| "Æ" | "&")+)>
+}
+
+/** Root production. */
+void Start() :
+{
+}
+{
+	(
+	(dateformat())?
+	(perioddetect())
+	((fromtilltext())
+	|
+	(fromtilltextdate())
+	|
+	(at())
+	|
+	(atdate())
+	)+
+	)+	
+}
+
+void perioddetect() :
+{
+	Token t;
+}
+{
+	<PERIOD>
+	<FROM_START>
+	((
+		t = <YEAR_START>
+	{ start = new String(t.image); }
+	)
+	|
+	(	t = <DATE_START>
+	{ start = new String(t.image); }))
+	<TILL_START>
+	((
+		t = <YEAR_START>
+	{ end = new String(t.image); }
+	)
+	|
+	(	t = <DATE_START>
+	{ end = new String(t.image); }))
+}
+
+void dateformat() :
+{
+	Token t;
+}
+{
+	<DATEFORMAT>
+	t = <FORMAT_DATEFORMAT>
+	{
+		dateformat = new String(t.image);
+	}
+}
+void fromtilltext() :
+{
+	Token t;
+}
+{
+	{info = new InfoDate();
+	info.setType(1);
+	info.settitlePage(page);
+	info.setDateFormat(dateformat);}
+	<FROM>
+	(
+	(	t = <YEAR_DATA_FROM>
+	{
+		info.setbeginDate(new String(t.image));
+	})
+	|
+	(	t = <SPECIAL_DATA_FROM>
+	{
+		info.setbeginDate(start);
+	})
+	)
+	<TILL_DATA_FROM>
+	(
+	(	t = <YEAR_DATA_TILL>
+	{
+		info.setendDate(new String(t.image));
+	})
+	|
+	(	t = <SPECIAL_DATA_TILL>
+	{
+		info.setendDate(end);
+	})
+	)
+	(<TEXT_DATA_TILL_TOTEXT>)?
+	(t = <WORDS_DATA_TEXT_IN>
+	{ info.setLink(new String(t.image)); })?
+	{if (info.getLink() != null){
+		outqueue.add(info);
+		}
+	}
+	(<WORDS_DATA_TEXT_IN>)?
+}
+
+void fromtilltextdate() :
+{
+	Token t;
+}
+{
+	{info = new InfoDate();
+	info.setType(1);
+	info.settitlePage(page);
+	info.setDateFormat(dateformat);}
+	<FROM>
+	(
+	(	t = <DATE_DATA_FROM>
+	{
+		info.setbeginDate(new String(t.image));
+	})
+	|
+	(	t = <SPECIAL_DATA_FROM>
+	{
+		info.setbeginDate(start);
+	})
+	)
+	<TILL_DATA_FROM>
+	(
+	(	t = <DATE_DATA_TILL>
+	{
+		info.setendDate(new String(t.image));
+	})
+	|
+	(	t = <SPECIAL_DATA_TILL>
+	{
+		info.setendDate(end);
+	})
+	)
+	(<TEXT_DATA_TILL_TOTEXT>)?
+	(t = <WORDS_DATA_TEXT_IN>
+	{ info.setLink(new String(t.image)); })?
+	{if (info.getLink() != null){
+		outqueue.add(info);
+		}
+	}
+	(<WORDS_DATA_TEXT_IN>)?
+}
+
+void at() :
+{
+	Token t;
+}
+{
+	{info = new InfoDate();
+	info.setType(2);
+	info.settitlePage(page);
+	info.setDateFormat(dateformat);}
+	<AT>
+	(
+	(	t = <YEAR_DATA_AT>
+	{
+		info.setatDate(new String(t.image));
+	})
+	|
+	(	t = <SPECIAL_DATA_AT>
+	{
+		info.setatDate(start);
+	})
+	)
+	(<TEXT_DATA_AT_TOTEXT>)?
+	(t = <WORDS_DATA_TEXT_IN>
+	{ info.setLink(new String(t.image)); })?
+	{if (info.getLink() != null){
+		outqueue.add(info);
+		}
+	}
+	(<WORDS_DATA_TEXT_IN>)?
+}
+
+void atdate() :
+{
+	Token t;
+}
+{
+	{info = new InfoDate();
+	info.setType(2);
+	info.settitlePage(page);
+	info.setDateFormat(dateformat);}
+	<AT>
+	(
+	(	t = <DATE_DATA_AT>
+	{
+		info.setatDate(new String(t.image));
+	})
+	|
+	(	t = <SPECIAL_DATA_FROM>
+	{
+		info.setatDate(start);
+	})
+	)
+	(<TEXT_DATA_AT_TOTEXT>)?
+	(t = <WORDS_DATA_TEXT_IN>
+	{ info.setLink(new String(t.image)); })?
+	{if (info.getLink() != null){
+		outqueue.add(info);
+		}
+	}
+	(<WORDS_DATA_TEXT_IN>)?
+}
+
+< * > TOKEN :
+{
+< UNEXPECTED_CHAR : ~[] >
+}

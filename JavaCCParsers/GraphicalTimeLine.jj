@@ -1,0 +1,271 @@
+/* Copyright (c) 2006, Sun Microsystems, Inc.
+ * All rights reserved.
+ * 
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ * 
+ *     * Redistributions of source code must retain the above copyright notice,
+ *       this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above copyright
+ *       notice, this list of conditions and the following disclaimer in the
+ *       documentation and/or other materials provided with the distribution.
+ *     * Neither the name of the Sun Microsystems, Inc. nor the names of its
+ *       contributors may be used to endorse or promote products derived from
+ *       this software without specific prior written permission.
+ * 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
+ * THE POSSIBILITY OF SUCH DAMAGE.
+ */
+//| <SHIFT: ("shift:("(.)+,(.)+")")>
+
+options
+{
+    LOOKAHEAD=3;
+	IGNORE_CASE=true;
+	DEBUG_TOKEN_MANAGER=false;
+	DEBUG_PARSER=false;
+	FORCE_LA_CHECK=true;
+	STATIC=false;
+}
+
+PARSER_BEGIN(GraphicalTimeLine)
+
+/** Simple brace matcher. */
+public class GraphicalTimeLine {
+
+  /** Main entry point. */
+  public static void main(String args[]) throws ParseException {
+    GraphicalTimeLine parser = new GraphicalTimeLine(System.in);
+    parser.Start();
+  }
+
+}
+
+
+PARSER_END(GraphicalTimeLine)
+SKIP :
+{
+	<"title"(" ")*("=")> : TIMELINE_START
+|	<"from"(" ")*("=")> : TIMELINE_FROM
+|	<"to"(" ")*("=")> : TIMELINE_TO
+|	<"text"(" ")*("=")> : TIMELINE_TEXT
+|	<"at"(" ")*("=")> : TIMELINE_AT
+|	<"note"(["0"-"9"])+("")*("=")> : TIMELINE_TEXTAT
+|	<"\n" | "\r" | "\r\n">
+|	<  ~[] >
+}
+//START
+<TIMELINE_START> SKIP :
+{
+  	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<" ">
+}
+
+<TIMELINE_START> TOKEN :
+{
+  <ODOUBLE_START: "[[">
+| <CDOUBLE_START: "]]">
+| <OR_START: "|">
+| <WORDS_START: (["a"-"z" , "~" , "#", " ", "<", ">"])+>
+}
+
+//FROM
+<TIMELINE_FROM> SKIP :
+{
+  	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<" ">
+}
+
+<TIMELINE_FROM> TOKEN :
+{
+  <YEAR_FROM: (("-")?(["0"-"9"])+(".")?(["0"-"9"])*) | "start" | "end">
+}
+
+//TO
+<TIMELINE_TO> SKIP :
+{
+  	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<" ">
+}
+
+<TIMELINE_TO> TOKEN :
+{
+  <YEAR_TO: (("-")?(["0"-"9"])+(".")?(["0"-"9"])*) | "start" | "end">
+}
+
+//TEXT
+<TIMELINE_TEXT> SKIP :
+{
+  	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<"[["> : TIMELINE_TEXT_IN
+|	<  ~[] >
+}
+
+//TEXT_IN
+<TIMELINE_TEXT_IN> SKIP :
+{
+  	<"\n" | "\r" | "\r\n" | "]]"> : DEFAULT
+|	<" ">
+|	<"'">
+|	<  ~[] >
+}
+
+<TIMELINE_TEXT_IN> TOKEN :
+{
+  <ODOUBLE_TEXT_IN: "[[">
+| <OR_TEXT_IN: "|">
+| <WORDS_TEXT_IN: (["a"-"z" , "~" , "#", " ", "<", ">", "-"])+>
+}
+
+//AT
+<TIMELINE_AT> SKIP :
+{
+  	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<" ">
+}
+
+<TIMELINE_AT> TOKEN :
+{
+  <YEAR_AT: (("-")?(["0"-"9"])+(".")?(["0"-"9"])*) | "start" | "end">
+}
+
+//TEXTAT
+<TIMELINE_TEXTAT> SKIP :
+{
+  	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<"[["> : TIMELINE_TEXTAT_IN
+|	<  ~[] >
+}
+
+//TEXTAT_IN
+<TIMELINE_TEXTAT_IN> SKIP :
+{
+  	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<" ">
+}
+
+<TIMELINE_TEXTAT_IN> TOKEN :
+{
+  <CDOUBLE_TEXTAT_IN: "]]"> : DEFAULT
+| <WORDS_TEXTAT_IN: (["a"-"z" , "~" , "#", " ", "|", "<", ">", "-", "!"])+>
+}
+
+
+/** Root production. */
+void Start() :
+{
+}
+{
+	title()
+	(
+	fromtotext()
+	)+
+	(
+	atandtextat()
+	)+
+}
+
+void fromtotext() :
+{
+}
+{
+	(
+		from()
+		to()
+		(text())?
+	)
+}
+
+void atandtextat() :
+{
+	
+}
+{
+	(
+	at()
+	textat()
+	)
+	|
+	(
+	textat()
+	at()
+	)
+}
+
+void title() :
+{
+	Token t;
+}
+{
+	<ODOUBLE_START>
+	t = <WORDS_START>
+	{ System.out.println(new String(t.image)); }
+	(
+	<OR_START>
+	<WORDS_START>
+	<CDOUBLE_START>
+	)?
+}
+
+void from() :
+{
+	Token t;
+}
+{
+	t = <YEAR_FROM>
+	{ System.out.println(new String(t.image)); }
+}
+
+void to() :
+{
+	Token t;
+}
+{
+	t = <YEAR_TO>
+	{ System.out.println(new String(t.image)); }
+}
+
+void text() :
+{
+	Token t;
+}
+{
+	t = <WORDS_TEXT_IN>
+	{ System.out.println(new String(t.image)); }
+	(<OR_TEXT_IN>)?
+	(<WORDS_TEXT_IN>)?
+
+}
+
+void at() :
+{
+	Token t;
+}
+{
+	t = <YEAR_AT>
+	{ System.out.println(new String(t.image)); }
+}
+
+void textat() :
+{
+	Token t;
+}
+{
+	t = <WORDS_TEXTAT_IN>
+	{ System.out.println(new String(t.image)); }
+	<CDOUBLE_TEXTAT_IN>
+}
+
+< * > TOKEN :
+{
+< UNEXPECTED_CHAR : ~[] >
+}

@@ -1,0 +1,692 @@
+&lt;timeline&gt;
+Preset     = TimeVertical_OneBar_UnitYear
+ImageSize  = width:220 height:1700
+PlotArea   = bottom:200 left:40
+Period     = from:1903 till:2017
+ScaleMajor = start:1905 increment:5
+ScaleMinor = start:1903 increment:1
+
+Colors =
+  id:canvas         value:gray(0.9)
+  id:Frankreich     value:rgb(0.96,0.96,0.3) legend:Frankreich_(36)
+  id:Belgien        value:rgb(1,0.5,1)       legend:Belgien_(18)
+  id:Italien        value:rgb(0.1,0.95,0.2)  legend:Italien_(10)
+  id:Spanien        value:rgb(1,0.3,0.3)     legend:Spanien_(12)
+  id:Luxemburg      value:rgb(0,0.8,0.8)     legend:Luxemburg_(5)
+  id:USA            value:rgb(0.5,0.5,1)     legend:USA_(3)
+  id:Niederlande    value:rgb(0.9,0.5,0.2)   legend:Niederlande_(2)
+  id:Schweiz        value:rgb(0.8,0.8,1)     legend:Schweiz_(2)
+  id:Australien     value:rgb(0.7,0.7,0.8)   legend:Australien_(1)
+  id:D�nemark       value:rgb(0.7,0.9,0.5)   legend:D�nemark_(1)
+  id:Deutschland    value:rgb(1,0.6,0.6)     legend:Deutschland_(1)
+  id:Gro�britannien value:rgb(0.8,0.4,0.8)   legend:Gro�britannien_(1)
+  id:Irland         value:rgb(0.1,0.6,0.3)   legend:Irland_(1)
+
+  id:linemark    value:gray(0.8)
+  id:linemark2   value:gray(0.9)
+  id:grau        value:gray(0.5)
+
+BackgroundColors = canvas:canvas
+
+PlotData =
+  mark:(line,linemark) anchor:from textcolor:grau shift:(22,2)
+
+  from:1903 till:1904 text:"[[Maurice Garin]]" color:Frankreich
+  from:1904 till:1905 text:"[[Henri Cornet]]" color:Frankreich
+  from:1905 till:1906 text:"[[Louis Trousselier]]" color:Frankreich
+  from:1906 till:1907 text:"[[Ren� Pottier]]" color:Frankreich
+  from:1907 till:1908 text:"[[Lucien Petit-Breton]]" color:Frankreich
+  from:1908 till:1909 text:"[[Lucien Petit-Breton]] 2�" color:Frankreich
+  from:1909 till:1910 text:"[[Fran�ois Faber]]" color:Luxemburg
+  from:1910 till:1911 text:"[[Octave Lapize]]" color:Frankreich
+  from:1911 till:1912 text:"[[Gustave Garrigou]]" color:Frankreich
+  from:1912 till:1913 text:"[[Odiel Defraeye]]" color:Belgien
+  from:1913 till:1914 text:"[[Philippe Thys]]" color:Belgien
+  from:1914 till:1915 text:"[[Philippe Thys]]" color:Belgien
+  from:1919 till:1920 text:"[[Firmin Lambot]]" color:Belgien
+  from:1920 till:1921 text:"[[Philippe Thys]] 3�" color:Belgien
+  from:1921 till:1922 text:"[[L�on Scieur]]" color:Belgien
+  from:1922 till:1923 text:"[[Firmin Lambot]] 2�" color:Belgien
+  from:1923 till:1924 text:"[[Henri P�lissier]]" color:Frankreich
+  from:1924 till:1925 text:"[[Ottavio Bottecchia]]" color:Italien
+  from:1925 till:1926 text:"[[Ottavio Bottecchia]] 2�" color:Italien mark:(line,linemark2)
+  from:1926 till:1927 text:"[[Lucien Buysse]]" color:Belgien
+  from:1927 till:1928 text:"[[Nicolas Frantz]]" color:Luxemburg
+  from:1928 till:1929 text:"[[Nicolas Frantz]] 2�" color:Luxemburg
+  from:1929 till:1930 text:"[[Maurice de Waele]]" color:Belgien
+  from:1930 till:1931 text:"[[Andr� Leducq]]" color:Frankreich
+  from:1931 till:1932 text:"[[Antonin Magne]]" color:Frankreich
+  from:1932 till:1933 text:"[[Andr� Leducq]] 2�" color:Frankreich
+  from:1933 till:1934 text:"[[Georges Speicher]]" color:Frankreich
+  from:1934 till:1935 text:"[[Antonin Magne]] 2�" color:Frankreich
+  from:1935 till:1936 text:"[[Romain Maes]]" color:Belgien
+  from:1936 till:1937 text:"[[Sylv�re Maes]]" color:Belgien
+  from:1937 till:1938 text:"[[Roger Lap�bie]]" color:Frankreich
+  from:1938 till:1939 text:"[[Gino Bartali]]" color:Italien
+  from:1939 till:1940 text:"[[Sylv�re Maes]] 2�" color:Belgien
+  from:1947 till:1948 text:"[[Jean Robic]]" color:Frankreich
+  from:1948 till:1949 text:"[[Gino Bartali]] 2�" color:Italien
+  from:1949 till:1950 text:"[[Fausto Coppi]]" color:Italien mark:(line,linemark2)
+  from:1950 till:1951 text:"[[Ferdinand K�bler]]" color:Schweiz
+  from:1951 till:1952 text:"[[Hugo Koblet]]" color:Schweiz
+  from:1952 till:1953 text:"[[Fausto Coppi]] 2�" color:Italien
+  from:1953 till:1954 text:"[[Louison Bobet]]" color:Frankreich
+  from:1954 till:1955 text:"[[Louison Bobet]]" color:Frankreich
+  from:1955 till:1956 text:"[[Louison Bobet]] 3�" color:Frankreich
+  from:1956 till:1957 text:"[[Roger Walkowiak]]" color:Frankreich
+  from:1957 till:1958 text:"[[Jacques Anquetil]]" color:Frankreich
+  from:1958 till:1959 text:"[[Charly Gaul]]" color:Luxemburg
+  from:1959 till:1960 text:"[[Federico Bahamontes]]" color:Spanien
+  from:1960 till:1961 text:"[[Gastone Nencini]]" color:Italien
+  from:1961 till:1962 text:"[[Jacques Anquetil]]" color:Frankreich
+  from:1962 till:1963 text:"[[Jacques Anquetil]]" color:Frankreich
+  from:1963 till:1964 text:"[[Jacques Anquetil]]" color:Frankreich
+  from:1964 till:1965 text:"[[Jacques Anquetil]] 5�" color:Frankreich
+  from:1965 till:1966 text:"[[Felice Gimondi]]" color:Italien
+  from:1966 till:1967 text:"[[Lucien Aimar]]" color:Frankreich
+  from:1967 till:1968 text:"[[Roger Pingeon]]" color:Frankreich
+  from:1968 till:1969 text:"[[Jan Janssen (Radrennfahrer)|Jan Janssen]]" color:Niederlande
+  from:1969 till:1970 text:"[[Eddy Merckx]]" color:Belgien
+  from:1970 till:1971 text:"[[Eddy Merckx]]" color:Belgien
+  from:1971 till:1972 text:"[[Eddy Merckx]]" color:Belgien
+  from:1972 till:1973 text:"[[Eddy Merckx]]" color:Belgien
+  from:1973 till:1974 text:"[[Luis Ocana|Luis Oca�a]]" color:Spanien
+  from:1974 till:1975 text:"[[Eddy Merckx]] 5�" color:Belgien
+  from:1975 till:1976 text:"[[Bernard Th�venet]]" color:Frankreich
+  from:1976 till:1977 text:"[[Lucien van Impe]]" color:Belgien
+  from:1977 till:1978 text:"[[Bernard Th�venet]] 2�" color:Frankreich
+  from:1978 till:1979 text:"[[Bernard Hinault]]" color:Frankreich
+  from:1979 till:1980 text:"[[Bernard Hinault]]" color:Frankreich
+  from:1980 till:1981 text:"[[Joop Zoetemelk]]" color:Niederlande
+  from:1981 till:1982 text:"[[Bernard Hinault]]" color:Frankreich
+  from:1982 till:1983 text:"[[Bernard Hinault]]" color:Frankreich
+  from:1983 till:1984 text:"[[Laurent Fignon]]" color:Frankreich
+  from:1984 till:1985 text:"[[Laurent Fignon]] 2�" color:Frankreich
+  from:1985 till:1986 text:"[[Bernard Hinault]] 5�" color:Frankreich
+  from:1986 till:1987 text:"[[Greg LeMond]]" color:USA
+  from:1987 till:1988 text:"[[Stephen Roche]]" color:Irland
+  from:1988 till:1989 text:"[[Pedro Delgado]]" color:Spanien
+  from:1989 till:1990 text:"[[Greg LeMond]]" color:USA
+  from:1990 till:1991 text:"[[Greg LeMond]] 3�" color:USA
+  from:1991 till:1992 text:"[[Miguel Indurain]]" color:Spanien
+  from:1992 till:1993 text:"[[Miguel Indurain]]" color:Spanien
+  from:1993 till:1994 text:"[[Miguel Indurain]]" color:Spanien
+  from:1994 till:1995 text:"[[Miguel Indurain]]" color:Spanien
+  from:1995 till:1996 text:"[[Miguel Indurain]] 5�" color:Spanien
+  from:1996 till:1997 text:"[[Bjarne Riis]]" color:D�nemark
+  from:1997 till:1998 text:"[[Jan Ullrich]]" color:Deutschland
+  from:1998 till:1999 text:"[[Marco Pantani]]" color:Italien
+  from:1999 till:2000 text:"Titel annulliert"
+  from:2000 till:2001 text:"Titel annulliert"
+  from:2001 till:2002 text:"Titel annulliert"
+  from:2002 till:2003 text:"Titel annulliert"
+  from:2003 till:2004 text:"Titel annulliert"
+  from:2004 till:2005 text:"Titel annulliert"
+  from:2005 till:2006 text:"Titel annulliert"
+  from:2006 till:2007 text:"[[Oscar Pereiro Sio]]" color:Spanien 
+  from:2007 till:2008 text:"[[Alberto Contador]]" color:Spanien 
+  from:2008 till:2009 text:"[[Carlos Sastre]]" color:Spanien
+  from:2009 till:2010 text:"[[Alberto Contador]] 2�" color:Spanien 
+  from:2010 till:2011 text:"[[Andy Schleck]]" color:Luxemburg
+  from:2011 till:2012 text:"[[Cadel Evans]]" color:Australien
+  from:2012 till:2013 text:"[[Bradley Wiggins]]" color:Gro�britannien
+  from:2013 till:2014 text:"[[Chris Froome]]" color:Gro�britannien
+  from:2014 till:2015 text:"[[Vincenzo Nibali]]" color:Italien
+  from:2015 till:2016 text:"[[Chris Froome]]" color:Gro�britannien
+  from:2016 till:2017 text:"[[Chris Froome]] 3�" color:Gro�britannien
+
+  shift:(0,-4) anchor:middle align:center width:30 textcolor:black
+
+  from:1903 till:1904 text:FRA  color:Frankreich
+  from:1904 till:1905 text:FRA  color:Frankreich
+  from:1905 till:1906 text:FRA  color:Frankreich
+  from:1906 till:1907 text:FRA  color:Frankreich
+  from:1907 till:1908 text:FRA  color:Frankreich
+  from:1908 till:1909 text:FRA  color:Frankreich
+  from:1909 till:1910 text:LUX color:Luxemburg
+  from:1910 till:1911 text:FRA  color:Frankreich
+  from:1911 till:1912 text:FRA  color:Frankreich
+  from:1912 till:1913 text:BEL  color:Belgien
+  from:1913 till:1914 text:BEL  color:Belgien
+  from:1914 till:1915 text:BEL  color:Belgien
+  from:1919 till:1920 text:BEL  color:Belgien
+  from:1920 till:1921 text:BEL  color:Belgien
+  from:1921 till:1922 text:BEL  color:Belgien
+  from:1922 till:1923 text:BEL  color:Belgien
+  from:1923 till:1924 text:FRA  color:Frankreich
+  from:1924 till:1925 text:ITA  color:Italien
+  from:1925 till:1926 text:ITA  color:Italien mark:(line,linemark2)
+  from:1926 till:1927 text:BEL  color:Belgien
+  from:1927 till:1928 text:LUX color:Luxemburg
+  from:1928 till:1929 text:LUX color:Luxemburg
+  from:1929 till:1930 text:BEL  color:Belgien
+  from:1930 till:1931 text:FRA  color:Frankreich
+  from:1931 till:1932 text:FRA  color:Frankreich
+  from:1932 till:1933 text:FRA  color:Frankreich
+  from:1933 till:1934 text:FRA  color:Frankreich
+  from:1934 till:1935 text:FRA  color:Frankreich
+  from:1935 till:1936 text:BEL  color:Belgien
+  from:1936 till:1937 text:BEL  color:Belgien
+  from:1937 till:1938 text:FRA  color:Frankreich
+  from:1938 till:1939 text:ITA  color:Italien
+  from:1939 till:1940 text:BEL  color:Belgien
+  from:1947 till:1948 text:FRA  color:Frankreich
+  from:1948 till:1949 text:ITA  color:Italien
+  from:1949 till:1950 text:ITA  color:Italien mark:(line,linemark2)
+  from:1950 till:1951 text:SUI  color:Schweiz
+  from:1951 till:1952 text:SUI  color:Schweiz
+  from:1952 till:1953 text:ITA  color:Italien
+  from:1953 till:1954 text:FRA  color:Frankreich
+  from:1954 till:1955 text:FRA  color:Frankreich
+  from:1955 till:1956 text:FRA  color:Frankreich
+  from:1956 till:1957 text:FRA  color:Frankreich
+  from:1957 till:1958 text:FRA  color:Frankreich
+  from:1958 till:1959 text:LUX color:Luxemburg
+  from:1959 till:1960 text:ESP  color:Spanien
+  from:1960 till:1961 text:ITA  color:Italien
+  from:1961 till:1962 text:FRA  color:Frankreich
+  from:1962 till:1963 text:FRA  color:Frankreich
+  from:1963 till:1964 text:FRA  color:Frankreich
+  from:1964 till:1965 text:FRA  color:Frankreich
+  from:1965 till:1966 text:ITA  color:Italien
+  from:1966 till:1967 text:FRA  color:Frankreich
+  from:1967 till:1968 text:FRA  color:Frankreich
+  from:1968 till:1969 text:NED  color:Niederlande
+  from:1969 till:1970 text:BEL  color:Belgien
+  from:1970 till:1971 text:BEL  color:Belgien
+  from:1971 till:1972 text:BEL  color:Belgien
+  from:1972 till:1973 text:BEL  color:Belgien
+  from:1973 till:1974 text:ESP  color:Spanien
+  from:1974 till:1975 text:BEL  color:Belgien
+  from:1975 till:1976 text:FRA  color:Frankreich
+  from:1976 till:1977 text:BEL  color:Belgien
+  from:1977 till:1978 text:FRA  color:Frankreich
+  from:1978 till:1979 text:FRA  color:Frankreich
+  from:1979 till:1980 text:FRA  color:Frankreich
+  from:1980 till:1981 text:NED  color:Niederlande
+  from:1981 till:1982 text:FRA  color:Frankreich
+  from:1982 till:1983 text:FRA  color:Frankreich
+  from:1983 till:1984 text:FRA  color:Frankreich
+  from:1984 till:1985 text:FRA  color:Frankreich
+  from:1985 till:1986 text:FRA  color:Frankreich
+  from:1986 till:1987 text:USA color:USA
+  from:1987 till:1988 text:IRL  color:Irland
+  from:1988 till:1989 text:ESP  color:Spanien
+  from:1989 till:1990 text:USA color:USA
+  from:1990 till:1991 text:USA color:USA
+  from:1991 till:1992 text:ESP  color:Spanien
+  from:1992 till:1993 text:ESP  color:Spanien
+  from:1993 till:1994 text:ESP  color:Spanien
+  from:1994 till:1995 text:ESP  color:Spanien
+  from:1995 till:1996 text:ESP  color:Spanien
+  from:1996 till:1997 text:DEN  color:D�nemark
+  from:1997 till:1998 text:GER  color:Deutschland
+  from:1998 till:1999 text:ITA  color:Italien
+  from:2006 till:2007 text:ESP  color:Spanien
+  from:2007 till:2008 text:ESP  color:Spanien
+  from:2008 till:2009 text:ESP  color:Spanien
+  from:2009 till:2010 text:ESP  color:Spanien
+  from:2010 till:2011 text:LUX  color:Luxemburg
+  from:2011 till:2012 text:AUS  color:Australien
+  from:2012 till:2013 text:GBR  color:Gro�britannien
+  from:2013 till:2014 text:GBR  color:Gro�britannien
+  from:2014 till:2015 text:ITA  color:Italien
+  from:2015 till:2016 text:GBR  color:Gro�britannien
+  from:2016 till:2017 text:GBR  color:Gro�britannien
+ 
+TextData =
+  pos:(40,190) tabs:(0-left,35-left,140-right)
+  text:^Abk.^Land^Siege fontsize:M
+  text:^FRA^[[Frankreich]]^36
+  text:^BEL^[[Belgien]]^18
+  text:^ESP^[[Spanien]]^12
+  text:^ITA^[[Italien]]^10
+  text:^LUX^[[Luxemburg]]^5
+  text:^GBR^[[Gro�britannien]]^4 
+  text:^USA^[[Vereinigte Staaten|USA]]^3
+  text:^NED^[[Niederlande]]^2
+  text:^SUI^[[Schweiz]]^2
+  text:^AUS^[[Australien]]^1
+  text:^DEN^[[D�nemark]]^1
+  text:^GER^[[Deutschland]]^1
+  text:^IRL^[[Irland]]^1
+
+&lt;/timeline&gt;<noinclude>
+[[Kategorie:Vorlage:Zeitleiste Sport|Tour de France Sieger]]
+[[Kategorie:Vorlage:Frankreich|Zeitleiste Tour de France Sieger]]
+</noinclude>
+
+
+Text that we cannot parse !!!!
+
+
+
+<!---
+NOTE: PLEASE MAINTAIN SIMPLE WORDING WIKILINKED TO DETAILS - SEE => "[[Template talk:Nature timeline#Best wording]]" (or see => https://en.wikipedia.org/wiki/Template_talk:Nature_timeline#Best_wording_for_.22.7B.7BNature_timeline.7D.7D.22_events.3F ) - Enjoy! :) [[User:Drbogdan|Drbogdan]] ([[User talk:Drbogdan|talk]]) 01:00, 20 August 2016 (UTC)
+--->{{Graphical timeline
+ | <!--- you MUST remove any lines you don't need --->
+
+ | help=off
+ | link-o=Human timeline
+
+ | scale-increment=1.000
+ | plot-colour=#ffc966
+l
+
+ | title=[[Timeline of human evolution|Human timeline]]
+
+ | bar1-from=-10.000
+ | bar1-to=-2.800
+ | bar1-text='''[[Timeline of human evolution#Hominidae|Human-like<br>apes]]
+ | bar1-colour=#ffa500
+ | bar1-left=0.0
+ | bar1-nudge-right=-0.3
+ | bar1-nudge-down=-5.3
+ 
+ | bar2-from=-9.800
+ | bar2-to=-9.700
+ | bar2-text=<small>''[[Nakalipithecus]]
+ | bar2-colour=#ffa500
+ | bar2-left=0.1
+ | bar2-nudge-down=0
+ | bar2-nudge-left=0.5
+
+ | bar3-from=-9.000
+ | bar3-to=-8.900 
+ | bar3-text=<small>''[[Ouranopithecus]]''</small>
+ | bar3-colour=#ffa500
+ | bar3-left=0.1
+ | bar3-nudge-down=0
+ | bar3-nudge-left=0.3
+
+ | bar4-from=-7.000
+ | bar4-to=-6.900
+ | bar4-text=<small>''[[Sahelanthropus]]''</small>
+ | bar4-colour=#ffa500
+ | bar4-left=0.1
+ | bar4-nudge-down=0
+ | bar4-nudge-left=0.3
+
+ | bar5-from=-6.000
+ | bar5-to=-5.900
+ | bar5-text=<small>''[[Orrorin]]''</small>
+ | bar5-colour=#ffa500
+ | bar5-left=0.1
+ | bar5-nudge-down=0
+ | bar5-nudge-left=2.0
+
+ | bar6-from=-4.400
+ | bar6-to=-4.300
+ | bar6-text=<small>''[[Ardipithecus]]''</small>
+ | bar6-colour=#ffa500
+ | bar6-left=0.1
+ | bar6-nudge-down=0
+ | bar6-nudge-left=1.0
+
+ | bar7-from=-3.600
+ | bar7-to=-3.500
+ | bar7-text=<small>''[[Australopithecus]]''</small>
+ | bar7-colour=#ffa500
+ | bar7-left=0.1
+ | bar7-nudge-down=0
+ | bar7-nudge-left=0
+
+ | bar8-from=-2.800
+ | bar8-to=-1.500
+ | bar8-text='''''[[Homo habilis]]'''''
+ | bar8-colour=#ffb732
+ | bar8-left=-0.0
+ | bar8-nudge-right=0.4
+ | bar8-nudge-down=0.3
+
+ | bar9-from=-1.800
+ | bar9-to=-0.070
+ | bar9-text='''''[[Homo erectus]]'''''
+ | bar9-colour=#ffc966
+ | bar9-left=0.1
+ | bar9-nudge-right=0.1
+ | bar9-nudge-down=1.0
+
+ | bar10-from=-0.600
+ | bar10-to=-0.040
+ | bar10-text='''''[[Neanderthal]]'''''
+ | bar10-colour=#ffdb99
+ | bar10-left=0.1
+ | bar10-nudge-right=0.4<!--- -0.6 --->
+
+ | bar10-nudge-down=0.3
+
+ | bar11-from=-0.195
+ | bar11-to=-0.000
+ | bar11-text='''''[[Anatomically modern human|Homo sapiens]]'''''
+ | bar11-colour=#ffff00
+ | bar11-left=0.2
+ | bar11-nudge-right=0.0
+ | bar11-nudge-down=0.0
+
+ | bar12-from=-0.0700
+ | bar12-to=-0.000
+ | bar12-text=
+ | bar12-colour=#ffff00
+ | bar12-left=0.0
+ | bar12-right=0.1
+ | bar12-nudge-right=0.0
+ | bar12-nudge-down=0.0
+
+ | bar13-from=-0.0400
+ | bar13-to=-0.000
+ | bar13-text=
+ | bar13-colour=#ffff00
+ | bar13-left=0.1
+ | bar13-right=0.2
+ | bar13-nudge-right=0.0
+ | bar13-nudge-down=0.0
+
+<!---
+ | note1-at=-13.000
+ | note1=<div style="line-height:9pt"><small>[[Pierolapithecus|Pierolapithecus catalaunicus]]</small></div>
+
+ | note2-at=-12.200
+ | note2=<div style="line-height:9pt"><small>[[Sivapithecus]]</small></div>
+--->
+
+ | note3-at=-10.000
+ | note3=<div style="line-height:9pt">[[Timeline of human evolution#Hominidae|Earlier apes]]</div>
+
+ | note4-at=-7.000
+ | note4=<div style="line-height:9pt">[[Sahelanthropus#Fossils|Earliest bipedal]]</div>
+
+<!---
+ | note5-at=-7.000
+ | note5=<div style="line-height:9pt"><small>''[[Sahelanthropus|Sahelanthropus tchadensis]]''</small></div>
+
+ | note6-at=-6.000
+ | note6=<div style="line-height:9pt"><small>''[[Orrorin|Orrorin tugenensis]]''</small></div>
+
+ | note7-at=-4.400
+ | note7=<div style="line-height:9pt"><small>''[[Ardipithecus|Ardipithecus ramidus]]''</small></div>
+--->
+
+ | note8-at=-4.050
+ | note8=<div style="line height:9pt">[[Human skeletal changes due to bipedalism|Early bipedal]]</div>
+
+<!---
+ | note9-at=-3.600
+ | note9=<div style="line-height:9pt"><small>''[[Australopithecus afarensis]]''</small></div>
+--->
+
+ | note10-at=-3.300
+ | note10=<div style="line-height:9pt">[[Stone Age#Beginning of the Stone Age|Earliest stone tools]]</div>
+
+<!---
+ | note11-at=-2.800
+ | note11=<div style="line-height:9pt">[[Homo habilis#Interpretations|Early stone tools]]</div>
+--->
+
+ | note12-at=-1.800
+ | note12=<div style="line-height:9pt">[[<!---Human#Evidence from the fossil record--->Out of Africa I|Earliest exit<br>from Africa]]</div>
+
+ | note13-at=-1.500
+ | note13=<div style="line-height:9pt">[[Control of fire by early humans#Lower Paleolithic Evidence<!---Homo erectus#Use of fire--->|Earliest fire use]]</div>
+
+ | note14-at=-0.790
+ | note14=<div style="line-height:9pt">[[Cooking#History|Earliest cooking]]</div>
+
+ | note15-at=-0.500
+ | note15=<div style="line-height:9pt">[[Clothing#Origin of clothing|Earliest clothes]]</div>
+
+<!---
+ | note16-at=-0.200
+ | note16=<div style="line-height:9pt">[[Homo sapiens idaltu|Human Anatomy]]</div>
+--->
+
+ | note17-at=-0.050
+ | note17=<div style="line-height:9pt">[[Behavioral modernity|Modern humans]]</div>
+
+ | note18=<center><span style="display:block">[[Pleistocene|<br>P<br>l<br>e<br>i<br>s<br>t<br>o<br>c<br>e<br>n<br>e]]</span></center>
+ | note18-at=-0.00
+ | note18-nudge-left=13
+ | note18-remove-arrow=yes
+
+ | note19=<center><span style="display:block">[[Pliocene|<br>P<br>l<br>i<br>o<br>c<br>e<br>n<br>e]]</span></center>
+ | note19-at=-3.50
+ | note19-nudge-left=13
+ | note19-remove-arrow=yes
+
+ | note20=<center><span style="display:block">[[Miocene|<br>M<br>i<br>o<br>c<br>e<br>n<br>e]]</span></center>
+ | note20-at=-6.75
+ | note20-nudge-left=13
+ | note20-remove-arrow=yes
+
+ | note21=<center><span style="display:block">[[Hominidae|<br>H<br><br>o<br><br>m<br><br>i<br><br>n<br><br>i<br><br>d<br><br>s]]</span></center>
+ | note21-at=-4.20
+ | note21-nudge-left=0
+ | note21-nudge-right=-4.20
+ | note21-remove-arrow=yes
+
+| caption=[[Cartesian coordinate system#Two dimensions|Axis scale]]: [[Geologic time scale|millions of years]].<br>''<small>also see {{tn|Life timeline}} and {{tn|Nature timeline}}</small>''
+
+}}<noinclude>
+{{documentation}}
+</noinclude>
+
+
+
+Text that we cannot parse 2 !!!!!!!
+
+
+
+
+
+<!---
+NOTE: PLEASE MAINTAIN SIMPLE WORDING WIKILINKED TO DETAILS - SEE => "[[Template talk:Nature timeline#Best wording]]" (or see => https://en.wikipedia.org/wiki/Template_talk:Nature_timeline#Best_wording_for_.22.7B.7BNature_timeline.7D.7D.22_events.3F ) - Enjoy! :) [[User:Drbogdan|Drbogdan]] ([[User talk:Drbogdan|talk]]) 01:00, 20 August 2016 (UTC)
+--->{{Graphical timeline
+ | <!--- you MUST remove any lines you don't need --->
+
+ | help=off
+ | link-o=Human timeline
+
+ | scale-increment=1.000
+ | plot-colour=#ffc966
+l
+
+ | title=[[Timeline of human evolution|Human timeline]]
+
+ | bar1-from=-10.000
+ | bar1-to=-2.800
+ | bar1-text='''[[Timeline of human evolution#Hominidae|Human-like<br>apes]]
+ | bar1-colour=#ffa500
+ | bar1-left=0.0
+ | bar1-nudge-right=-0.3
+ | bar1-nudge-down=-5.3
+ 
+ | bar2-from=-9.800
+ | bar2-to=-9.700
+ | bar2-text=<small>''[[Nakalipithecus]]
+ | bar2-colour=#ffa500
+ | bar2-left=0.1
+ | bar2-nudge-down=0
+ | bar2-nudge-left=0.5
+
+ | bar3-from=-9.000
+ | bar3-to=-8.900 
+ | bar3-text=<small>''[[Ouranopithecus]]''</small>
+ | bar3-colour=#ffa500
+ | bar3-left=0.1
+ | bar3-nudge-down=0
+ | bar3-nudge-left=0.3
+
+ | bar4-from=-7.000
+ | bar4-to=-6.900
+ | bar4-text=<small>''[[Sahelanthropus]]''</small>
+ | bar4-colour=#ffa500
+ | bar4-left=0.1
+ | bar4-nudge-down=0
+ | bar4-nudge-left=0.3
+
+ | bar5-from=-6.000
+ | bar5-to=-5.900
+ | bar5-text=<small>''[[Orrorin]]''</small>
+ | bar5-colour=#ffa500
+ | bar5-left=0.1
+ | bar5-nudge-down=0
+ | bar5-nudge-left=2.0
+
+ | bar6-from=-4.400
+ | bar6-to=-4.300
+ | bar6-text=<small>''[[Ardipithecus]]''</small>
+ | bar6-colour=#ffa500
+ | bar6-left=0.1
+ | bar6-nudge-down=0
+ | bar6-nudge-left=1.0
+
+ | bar7-from=-3.600
+ | bar7-to=-3.500
+ | bar7-text=<small>''[[Australopithecus]]''</small>
+ | bar7-colour=#ffa500
+ | bar7-left=0.1
+ | bar7-nudge-down=0
+ | bar7-nudge-left=0
+
+ | bar8-from=-2.800
+ | bar8-to=-1.500
+ | bar8-text='''''[[Homo habilis]]'''''
+ | bar8-colour=#ffb732
+ | bar8-left=-0.0
+ | bar8-nudge-right=0.4
+ | bar8-nudge-down=0.3
+
+ | bar9-from=-1.800
+ | bar9-to=-0.070
+ | bar9-text='''''[[Homo erectus]]'''''
+ | bar9-colour=#ffc966
+ | bar9-left=0.1
+ | bar9-nudge-right=0.1
+ | bar9-nudge-down=1.0
+
+ | bar10-from=-0.600
+ | bar10-to=-0.040
+ | bar10-text='''''[[Neanderthal]]'''''
+ | bar10-colour=#ffdb99
+ | bar10-left=0.1
+ | bar10-nudge-right=0.4<!--- -0.6 --->
+
+ | bar10-nudge-down=0.3
+
+ | bar11-from=-0.195
+ | bar11-to=-0.000
+ | bar11-text='''''[[Anatomically modern human|Homo sapiens]]'''''
+ | bar11-colour=#ffff00
+ | bar11-left=0.2
+ | bar11-nudge-right=0.0
+ | bar11-nudge-down=0.0
+
+ | bar12-from=-0.0700
+ | bar12-to=-0.000
+ | bar12-text=
+ | bar12-colour=#ffff00
+ | bar12-left=0.0
+ | bar12-right=0.1
+ | bar12-nudge-right=0.0
+ | bar12-nudge-down=0.0
+
+ | bar13-from=-0.0400
+ | bar13-to=-0.000
+ | bar13-text=
+ | bar13-colour=#ffff00
+ | bar13-left=0.1
+ | bar13-right=0.2
+ | bar13-nudge-right=0.0
+ | bar13-nudge-down=0.0
+
+<!---
+ | note1-at=-13.000
+ | note1=<div style="line-height:9pt"><small>[[Pierolapithecus|Pierolapithecus catalaunicus]]</small></div>
+
+ | note2-at=-12.200
+ | note2=<div style="line-height:9pt"><small>[[Sivapithecus]]</small></div>
+--->
+
+ | note3-at=-10.000
+ | note3=<div style="line-height:9pt">[[Timeline of human evolution#Hominidae|Earlier apes]]</div>
+
+ | note4-at=-7.000
+ | note4=<div style="line-height:9pt">[[Sahelanthropus#Fossils|Earliest bipedal]]</div>
+
+<!---
+ | note5-at=-7.000
+ | note5=<div style="line-height:9pt"><small>''[[Sahelanthropus|Sahelanthropus tchadensis]]''</small></div>
+
+ | note6-at=-6.000
+ | note6=<div style="line-height:9pt"><small>''[[Orrorin|Orrorin tugenensis]]''</small></div>
+
+ | note7-at=-4.400
+ | note7=<div style="line-height:9pt"><small>''[[Ardipithecus|Ardipithecus ramidus]]''</small></div>
+--->
+
+ | note8-at=-4.050
+ | note8=<div style="line height:9pt">[[Human skeletal changes due to bipedalism|Early bipedal]]</div>
+
+<!---
+ | note9-at=-3.600
+ | note9=<div style="line-height:9pt"><small>''[[Australopithecus afarensis]]''</small></div>
+--->
+
+ | note10-at=-3.300
+ | note10=<div style="line-height:9pt">[[Stone Age#Beginning of the Stone Age|Earliest stone tools]]</div>
+
+<!---
+ | note11-at=-2.800
+ | note11=<div style="line-height:9pt">[[Homo habilis#Interpretations|Early stone tools]]</div>
+--->
+
+ | note12-at=-1.800
+ | note12=<div style="line-height:9pt">[[<!---Human#Evidence from the fossil record--->Out of Africa I|Earliest exit<br>from Africa]]</div>
+
+ | note13-at=-1.500
+ | note13=<div style="line-height:9pt">[[Control of fire by early humans#Lower Paleolithic Evidence<!---Homo erectus#Use of fire--->|Earliest fire use]]</div>
+
+ | note14-at=-0.790
+ | note14=<div style="line-height:9pt">[[Cooking#History|Earliest cooking]]</div>
+
+ | note15-at=-0.500
+ | note15=<div style="line-height:9pt">[[Clothing#Origin of clothing|Earliest clothes]]</div>
+
+<!---
+ | note16-at=-0.200
+ | note16=<div style="line-height:9pt">[[Homo sapiens idaltu|Human Anatomy]]</div>
+--->
+
+ | note17-at=-0.050
+ | note17=<div style="line-height:9pt">[[Behavioral modernity|Modern humans]]</div>
+
+ | note18=<center><span style="display:block">[[Pleistocene|<br>P<br>l<br>e<br>i<br>s<br>t<br>o<br>c<br>e<br>n<br>e]]</span></center>
+ | note18-at=-0.00
+ | note18-nudge-left=13
+ | note18-remove-arrow=yes
+
+ | note19=<center><span style="display:block">[[Pliocene|<br>P<br>l<br>i<br>o<br>c<br>e<br>n<br>e]]</span></center>
+ | note19-at=-3.50
+ | note19-nudge-left=13
+ | note19-remove-arrow=yes
+
+ | note20=<center><span style="display:block">[[Miocene|<br>M<br>i<br>o<br>c<br>e<br>n<br>e]]</span></center>
+ | note20-at=-6.75
+ | note20-nudge-left=13
+ | note20-remove-arrow=yes
+
+ | note21=<center><span style="display:block">[[Hominidae|<br>H<br><br>o<br><br>m<br><br>i<br><br>n<br><br>i<br><br>d<br><br>s]]</span></center>
+ | note21-at=-4.20
+ | note21-nudge-left=0
+ | note21-nudge-right=-4.20
+ | note21-remove-arrow=yes
+
+| caption=[[Cartesian coordinate system#Two dimensions|Axis scale]]: [[Geologic time scale|millions of years]].<br>''<small>also see {{tn|Life timeline}} and {{tn|Nature timeline}}</small>''
+
+}}<noinclude>
+{{documentation}}
+</noinclude>
+
+
+
+text

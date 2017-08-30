@@ -1,0 +1,33 @@
+DateFormat = dd/mm/yyyy
+Period     = from:01/01/1945 till:31/12/2019
+TimeAxis   = orientation:horizontal
+ScaleMajor = unit:year increment:10 start:1945
+
+Colors     =
+  id:canvas value:gray(0.5)
+  id:demokrat   value:darkblue           legend:Demokrat
+  id:golkar   value:yellow              legend:Golkar
+  id:pdi-p  value:rgb(0.6,0.0,0.0)     legend:PDI–P
+  id:pkb   value:green                legend:PKB
+  id:non-partisan  value:gray(0.7)        legend:Non-partisan
+
+Legend     = columns:3 left:205 top:55 columnwidth:100
+
+TextData =
+  pos:(20,40) textcolor:black fontsize:M
+  text:"Political parties:"
+
+BarData =
+  barset:Pres
+
+PlotData=
+  width:5 align:left fontsize:S shift:(5,-4) anchor:till
+  barset:Pres
+
+ from: start till: 12/03/1967 color:non-partisan text:"[[Sukarno]]" fontsize:10
+ from: 12/03/1967 till: 21/05/1998 color:golkar text:"[[Suharto]]" fontsize:10
+ from: 21/05/1998 till: 20/10/1999 color:golkar text:"[[Bacharuddin Jusuf Habibie]]" fontsize:10
+ from: 20/10/1999 till: 23/07/2001 color:pkb text:"[[Abdurrahman Wahid]]" fontsize:10
+ from: 23/07/2001 till: 20/10/2004 color:pdi-p text:"[[Megawati Sukarnoputri]]" fontsize:10
+ from: 20/10/2004 till: 20/10/2014 color:demokrat text:"[[Susilo Bambang Yudhoyono]]" fontsize:10
+ from: 20/10/2014 till: end color:pdi-p text:"[[Joko Widodo]]" fontsize:10

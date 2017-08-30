@@ -1,0 +1,257 @@
+<timeline>
+Preset     = TimeVertical_OneBar_UnitYear
+ImageSize  = width:220 height:1700
+PlotArea   = bottom:200 left:40
+Period     = from:1903 till:2017
+ScaleMajor = start:1905 increment:5
+ScaleMinor = start:1903 increment:1
+
+Colors =
+  id:canvas         value:gray(0.9)
+  id:Frankreich     value:rgb(0.96,0.96,0.3) legend:Frankreich_(36)
+  id:Belgien        value:rgb(1,0.5,1)       legend:Belgien_(18)
+  id:Italien        value:rgb(0.1,0.95,0.2)  legend:Italien_(10)
+  id:Spanien        value:rgb(1,0.3,0.3)     legend:Spanien_(12)
+  id:Luxemburg      value:rgb(0,0.8,0.8)     legend:Luxemburg_(5)
+  id:USA            value:rgb(0.5,0.5,1)     legend:USA_(3)
+  id:Niederlande    value:rgb(0.9,0.5,0.2)   legend:Niederlande_(2)
+  id:Schweiz        value:rgb(0.8,0.8,1)     legend:Schweiz_(2)
+  id:Australien     value:rgb(0.7,0.7,0.8)   legend:Australien_(1)
+  id:Dänemark       value:rgb(0.7,0.9,0.5)   legend:Dänemark_(1)
+  id:Deutschland    value:rgb(1,0.6,0.6)     legend:Deutschland_(1)
+  id:Großbritannien value:rgb(0.8,0.4,0.8)   legend:Großbritannien_(1)
+  id:Irland         value:rgb(0.1,0.6,0.3)   legend:Irland_(1)
+
+  id:linemark    value:gray(0.8)
+  id:linemark2   value:gray(0.9)
+  id:grau        value:gray(0.5)
+
+BackgroundColors = canvas:canvas
+
+PlotData =
+  mark:(line,linemark) anchor:from textcolor:grau shift:(22,2)
+
+  from:1903 till:1904 text:"[[Maurice Garin]]" color:Frankreich
+  from:1904 till:1905 text:"[[Henri Cornet]]" color:Frankreich
+  from:1905 till:1906 text:"[[Louis Trousselier]]" color:Frankreich
+  from:1906 till:1907 text:"[[René Pottier]]" color:Frankreich
+  from:1907 till:1908 text:"[[Lucien Petit-Breton]]" color:Frankreich
+  from:1908 till:1909 text:"[[Lucien Petit-Breton]] 2×" color:Frankreich
+  from:1909 till:1910 text:"[[François Faber]]" color:Luxemburg
+  from:1910 till:1911 text:"[[Octave Lapize]]" color:Frankreich
+  from:1911 till:1912 text:"[[Gustave Garrigou]]" color:Frankreich
+  from:1912 till:1913 text:"[[Odiel Defraeye]]" color:Belgien
+  from:1913 till:1914 text:"[[Philippe Thys]]" color:Belgien
+  from:1914 till:1915 text:"[[Philippe Thys]]" color:Belgien
+  from:1919 till:1920 text:"[[Firmin Lambot]]" color:Belgien
+  from:1920 till:1921 text:"[[Philippe Thys]] 3×" color:Belgien
+  from:1921 till:1922 text:"[[Léon Scieur]]" color:Belgien
+  from:1922 till:1923 text:"[[Firmin Lambot]] 2×" color:Belgien
+  from:1923 till:1924 text:"[[Henri Pélissier]]" color:Frankreich
+  from:1924 till:1925 text:"[[Ottavio Bottecchia]]" color:Italien
+  from:1925 till:1926 text:"[[Ottavio Bottecchia]] 2×" color:Italien mark:(line,linemark2)
+  from:1926 till:1927 text:"[[Lucien Buysse]]" color:Belgien
+  from:1927 till:1928 text:"[[Nicolas Frantz]]" color:Luxemburg
+  from:1928 till:1929 text:"[[Nicolas Frantz]] 2×" color:Luxemburg
+  from:1929 till:1930 text:"[[Maurice de Waele]]" color:Belgien
+  from:1930 till:1931 text:"[[André Leducq]]" color:Frankreich
+  from:1931 till:1932 text:"[[Antonin Magne]]" color:Frankreich
+  from:1932 till:1933 text:"[[André Leducq]] 2×" color:Frankreich
+  from:1933 till:1934 text:"[[Georges Speicher]]" color:Frankreich
+  from:1934 till:1935 text:"[[Antonin Magne]] 2×" color:Frankreich
+  from:1935 till:1936 text:"[[Romain Maes]]" color:Belgien
+  from:1936 till:1937 text:"[[Sylvère Maes]]" color:Belgien
+  from:1937 till:1938 text:"[[Roger Lapébie]]" color:Frankreich
+  from:1938 till:1939 text:"[[Gino Bartali]]" color:Italien
+  from:1939 till:1940 text:"[[Sylvère Maes]] 2×" color:Belgien
+  from:1947 till:1948 text:"[[Jean Robic]]" color:Frankreich
+  from:1948 till:1949 text:"[[Gino Bartali]] 2×" color:Italien
+  from:1949 till:1950 text:"[[Fausto Coppi]]" color:Italien mark:(line,linemark2)
+  from:1950 till:1951 text:"[[Ferdinand Kübler]]" color:Schweiz
+  from:1951 till:1952 text:"[[Hugo Koblet]]" color:Schweiz
+  from:1952 till:1953 text:"[[Fausto Coppi]] 2×" color:Italien
+  from:1953 till:1954 text:"[[Louison Bobet]]" color:Frankreich
+  from:1954 till:1955 text:"[[Louison Bobet]]" color:Frankreich
+  from:1955 till:1956 text:"[[Louison Bobet]] 3×" color:Frankreich
+  from:1956 till:1957 text:"[[Roger Walkowiak]]" color:Frankreich
+  from:1957 till:1958 text:"[[Jacques Anquetil]]" color:Frankreich
+  from:1958 till:1959 text:"[[Charly Gaul]]" color:Luxemburg
+  from:1959 till:1960 text:"[[Federico Bahamontes]]" color:Spanien
+  from:1960 till:1961 text:"[[Gastone Nencini]]" color:Italien
+  from:1961 till:1962 text:"[[Jacques Anquetil]]" color:Frankreich
+  from:1962 till:1963 text:"[[Jacques Anquetil]]" color:Frankreich
+  from:1963 till:1964 text:"[[Jacques Anquetil]]" color:Frankreich
+  from:1964 till:1965 text:"[[Jacques Anquetil]] 5×" color:Frankreich
+  from:1965 till:1966 text:"[[Felice Gimondi]]" color:Italien
+  from:1966 till:1967 text:"[[Lucien Aimar]]" color:Frankreich
+  from:1967 till:1968 text:"[[Roger Pingeon]]" color:Frankreich
+  from:1968 till:1969 text:"[[Jan Janssen (Radrennfahrer)|Jan Janssen]]" color:Niederlande
+  from:1969 till:1970 text:"[[Eddy Merckx]]" color:Belgien
+  from:1970 till:1971 text:"[[Eddy Merckx]]" color:Belgien
+  from:1971 till:1972 text:"[[Eddy Merckx]]" color:Belgien
+  from:1972 till:1973 text:"[[Eddy Merckx]]" color:Belgien
+  from:1973 till:1974 text:"[[Luis Ocana|Luis Ocaña]]" color:Spanien
+  from:1974 till:1975 text:"[[Eddy Merckx]] 5×" color:Belgien
+  from:1975 till:1976 text:"[[Bernard Thévenet]]" color:Frankreich
+  from:1976 till:1977 text:"[[Lucien van Impe]]" color:Belgien
+  from:1977 till:1978 text:"[[Bernard Thévenet]] 2×" color:Frankreich
+  from:1978 till:1979 text:"[[Bernard Hinault]]" color:Frankreich
+  from:1979 till:1980 text:"[[Bernard Hinault]]" color:Frankreich
+  from:1980 till:1981 text:"[[Joop Zoetemelk]]" color:Niederlande
+  from:1981 till:1982 text:"[[Bernard Hinault]]" color:Frankreich
+  from:1982 till:1983 text:"[[Bernard Hinault]]" color:Frankreich
+  from:1983 till:1984 text:"[[Laurent Fignon]]" color:Frankreich
+  from:1984 till:1985 text:"[[Laurent Fignon]] 2×" color:Frankreich
+  from:1985 till:1986 text:"[[Bernard Hinault]] 5×" color:Frankreich
+  from:1986 till:1987 text:"[[Greg LeMond]]" color:USA
+  from:1987 till:1988 text:"[[Stephen Roche]]" color:Irland
+  from:1988 till:1989 text:"[[Pedro Delgado]]" color:Spanien
+  from:1989 till:1990 text:"[[Greg LeMond]]" color:USA
+  from:1990 till:1991 text:"[[Greg LeMond]] 3×" color:USA
+  from:1991 till:1992 text:"[[Miguel Indurain]]" color:Spanien
+  from:1992 till:1993 text:"[[Miguel Indurain]]" color:Spanien
+  from:1993 till:1994 text:"[[Miguel Indurain]]" color:Spanien
+  from:1994 till:1995 text:"[[Miguel Indurain]]" color:Spanien
+  from:1995 till:1996 text:"[[Miguel Indurain]] 5×" color:Spanien
+  from:1996 till:1997 text:"[[Bjarne Riis]]" color:Dänemark
+  from:1997 till:1998 text:"[[Jan Ullrich]]" color:Deutschland
+  from:1998 till:1999 text:"[[Marco Pantani]]" color:Italien
+  from:1999 till:2000 text:"Titel annulliert"
+  from:2000 till:2001 text:"Titel annulliert"
+  from:2001 till:2002 text:"Titel annulliert"
+  from:2002 till:2003 text:"Titel annulliert"
+  from:2003 till:2004 text:"Titel annulliert"
+  from:2004 till:2005 text:"Titel annulliert"
+  from:2005 till:2006 text:"Titel annulliert"
+  from:2006 till:2007 text:"[[Oscar Pereiro Sio]]" color:Spanien 
+  from:2007 till:2008 text:"[[Alberto Contador]]" color:Spanien 
+  from:2008 till:2009 text:"[[Carlos Sastre]]" color:Spanien
+  from:2009 till:2010 text:"[[Alberto Contador]] 2×" color:Spanien 
+  from:2010 till:2011 text:"[[Andy Schleck]]" color:Luxemburg
+  from:2011 till:2012 text:"[[Cadel Evans]]" color:Australien
+  from:2012 till:2013 text:"[[Bradley Wiggins]]" color:Großbritannien
+  from:2013 till:2014 text:"[[Chris Froome]]" color:Großbritannien
+  from:2014 till:2015 text:"[[Vincenzo Nibali]]" color:Italien
+  from:2015 till:2016 text:"[[Chris Froome]]" color:Großbritannien
+  from:2016 till:2017 text:"[[Chris Froome]] 3×" color:Großbritannien
+
+  shift:(0,-4) anchor:middle align:center width:30 textcolor:black
+
+  from:1903 till:1904 text:FRA  color:Frankreich
+  from:1904 till:1905 text:FRA  color:Frankreich
+  from:1905 till:1906 text:FRA  color:Frankreich
+  from:1906 till:1907 text:FRA  color:Frankreich
+  from:1907 till:1908 text:FRA  color:Frankreich
+  from:1908 till:1909 text:FRA  color:Frankreich
+  from:1909 till:1910 text:LUX color:Luxemburg
+  from:1910 till:1911 text:FRA  color:Frankreich
+  from:1911 till:1912 text:FRA  color:Frankreich
+  from:1912 till:1913 text:BEL  color:Belgien
+  from:1913 till:1914 text:BEL  color:Belgien
+  from:1914 till:1915 text:BEL  color:Belgien
+  from:1919 till:1920 text:BEL  color:Belgien
+  from:1920 till:1921 text:BEL  color:Belgien
+  from:1921 till:1922 text:BEL  color:Belgien
+  from:1922 till:1923 text:BEL  color:Belgien
+  from:1923 till:1924 text:FRA  color:Frankreich
+  from:1924 till:1925 text:ITA  color:Italien
+  from:1925 till:1926 text:ITA  color:Italien mark:(line,linemark2)
+  from:1926 till:1927 text:BEL  color:Belgien
+  from:1927 till:1928 text:LUX color:Luxemburg
+  from:1928 till:1929 text:LUX color:Luxemburg
+  from:1929 till:1930 text:BEL  color:Belgien
+  from:1930 till:1931 text:FRA  color:Frankreich
+  from:1931 till:1932 text:FRA  color:Frankreich
+  from:1932 till:1933 text:FRA  color:Frankreich
+  from:1933 till:1934 text:FRA  color:Frankreich
+  from:1934 till:1935 text:FRA  color:Frankreich
+  from:1935 till:1936 text:BEL  color:Belgien
+  from:1936 till:1937 text:BEL  color:Belgien
+  from:1937 till:1938 text:FRA  color:Frankreich
+  from:1938 till:1939 text:ITA  color:Italien
+  from:1939 till:1940 text:BEL  color:Belgien
+  from:1947 till:1948 text:FRA  color:Frankreich
+  from:1948 till:1949 text:ITA  color:Italien
+  from:1949 till:1950 text:ITA  color:Italien mark:(line,linemark2)
+  from:1950 till:1951 text:SUI  color:Schweiz
+  from:1951 till:1952 text:SUI  color:Schweiz
+  from:1952 till:1953 text:ITA  color:Italien
+  from:1953 till:1954 text:FRA  color:Frankreich
+  from:1954 till:1955 text:FRA  color:Frankreich
+  from:1955 till:1956 text:FRA  color:Frankreich
+  from:1956 till:1957 text:FRA  color:Frankreich
+  from:1957 till:1958 text:FRA  color:Frankreich
+  from:1958 till:1959 text:LUX color:Luxemburg
+  from:1959 till:1960 text:ESP  color:Spanien
+  from:1960 till:1961 text:ITA  color:Italien
+  from:1961 till:1962 text:FRA  color:Frankreich
+  from:1962 till:1963 text:FRA  color:Frankreich
+  from:1963 till:1964 text:FRA  color:Frankreich
+  from:1964 till:1965 text:FRA  color:Frankreich
+  from:1965 till:1966 text:ITA  color:Italien
+  from:1966 till:1967 text:FRA  color:Frankreich
+  from:1967 till:1968 text:FRA  color:Frankreich
+  from:1968 till:1969 text:NED  color:Niederlande
+  from:1969 till:1970 text:BEL  color:Belgien
+  from:1970 till:1971 text:BEL  color:Belgien
+  from:1971 till:1972 text:BEL  color:Belgien
+  from:1972 till:1973 text:BEL  color:Belgien
+  from:1973 till:1974 text:ESP  color:Spanien
+  from:1974 till:1975 text:BEL  color:Belgien
+  from:1975 till:1976 text:FRA  color:Frankreich
+  from:1976 till:1977 text:BEL  color:Belgien
+  from:1977 till:1978 text:FRA  color:Frankreich
+  from:1978 till:1979 text:FRA  color:Frankreich
+  from:1979 till:1980 text:FRA  color:Frankreich
+  from:1980 till:1981 text:NED  color:Niederlande
+  from:1981 till:1982 text:FRA  color:Frankreich
+  from:1982 till:1983 text:FRA  color:Frankreich
+  from:1983 till:1984 text:FRA  color:Frankreich
+  from:1984 till:1985 text:FRA  color:Frankreich
+  from:1985 till:1986 text:FRA  color:Frankreich
+  from:1986 till:1987 text:USA color:USA
+  from:1987 till:1988 text:IRL  color:Irland
+  from:1988 till:1989 text:ESP  color:Spanien
+  from:1989 till:1990 text:USA color:USA
+  from:1990 till:1991 text:USA color:USA
+  from:1991 till:1992 text:ESP  color:Spanien
+  from:1992 till:1993 text:ESP  color:Spanien
+  from:1993 till:1994 text:ESP  color:Spanien
+  from:1994 till:1995 text:ESP  color:Spanien
+  from:1995 till:1996 text:ESP  color:Spanien
+  from:1996 till:1997 text:DEN  color:Dänemark
+  from:1997 till:1998 text:GER  color:Deutschland
+  from:1998 till:1999 text:ITA  color:Italien
+  from:2006 till:2007 text:ESP  color:Spanien
+  from:2007 till:2008 text:ESP  color:Spanien
+  from:2008 till:2009 text:ESP  color:Spanien
+  from:2009 till:2010 text:ESP  color:Spanien
+  from:2010 till:2011 text:LUX  color:Luxemburg
+  from:2011 till:2012 text:AUS  color:Australien
+  from:2012 till:2013 text:GBR  color:Großbritannien
+  from:2013 till:2014 text:GBR  color:Großbritannien
+  from:2014 till:2015 text:ITA  color:Italien
+  from:2015 till:2016 text:GBR  color:Großbritannien
+  from:2016 till:2017 text:GBR  color:Großbritannien
+ 
+TextData =
+  pos:(40,190) tabs:(0-left,35-left,140-right)
+  text:^Abk.^Land^Siege fontsize:M
+  text:^FRA^[[Frankreich]]^36
+  text:^BEL^[[Belgien]]^18
+  text:^ESP^[[Spanien]]^12
+  text:^ITA^[[Italien]]^10
+  text:^LUX^[[Luxemburg]]^5
+  text:^GBR^[[Großbritannien]]^4 
+  text:^USA^[[Vereinigte Staaten|USA]]^3
+  text:^NED^[[Niederlande]]^2
+  text:^SUI^[[Schweiz]]^2
+  text:^AUS^[[Australien]]^1
+  text:^DEN^[[Dänemark]]^1
+  text:^GER^[[Deutschland]]^1
+  text:^IRL^[[Irland]]^1
+
+</timeline><noinclude>
+[[Kategorie:Vorlage:Zeitleiste Sport|Tour de France Sieger]]
+[[Kategorie:Vorlage:Frankreich|Zeitleiste Tour de France Sieger]]
+</noinclude>

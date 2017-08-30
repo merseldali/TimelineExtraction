@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+
+<!--
+Copyright 2014-2015 The University of Edinburgh.
+
+Licensed under the Apache License, Version 2.0 (the "License"); 
+you may not use this file except in compliance with the License. 
+You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software 
+distributed under the License is distributed on an "AS IS" BASIS, 
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+implied. See the License for the specific language governing
+permissions and limitations under the License.
+-->
+
+<project name="math" default="all" basedir=".">
+
+  <description>
+  ANT build file to build and test math package.
+  </description>
+
+  <path id="classpath">
+    <pathelement location="build/classes"/>
+    <pathelement location="build/test/classes"/>
+    <fileset dir="lib">
+      <include name="*.jar"/>
+    </fileset>
+    <fileset dir=".">
+      <include name="*.jar"/>
+    </fileset>
+  </path>
+
+  <target name="init" description="Make build directories">
+    <mkdir dir="build"/>
+    <mkdir dir="build/lib"/>
+    <mkdir dir="build/classes"/>
+    <mkdir dir="build/test"/>
+    <mkdir dir="build/test/classes"/>
+  </target>
+
+  <target name="clean" description="Remove build directories">
+    <delete dir="build"/>
+  </target>
+
+  <target name="compile" description="Compile code" depends="init">
+    <javac srcdir="src" 
+           destdir="build/classes"
+           includeantruntime="false">
+      <include name="**/*.java"/>
+    </javac>
+  </target>
+
+  <target name="jar" depends="compile">
+    <jar destfile="build/lib/math.jar" 
+         basedir="build/classes"/>
+  </target>
+
+  <target name="compile-tests" description="Compile tests" depends="compile">
+    <javac srcdir="test" 
+           destdir="build/test/classes"
+           includeantruntime="false">
+      <include name="**/*.java"/>
+      <classpath>
+        <path refid="classpath"/>
+      </classpath>
+    </javac>
+  </target>
+
+  <target name="test" description="Run tests" depends="compile-tests">
+    <mkdir dir="build/test/xml"/>
+    <junit printsummary="yes" 
+           haltonfailure="no">
+      <classpath>
+        <path refid="classpath"/>
+      </classpath>
+      <formatter type="xml"/>
+      <formatter type="plain" usefile="false"/>
+      <batchtest fork="yes"
+                 todir="build/test/xml">
+        <fileset dir="test">
+          <include name="**/*Test.java"/>
+        </fileset>
+      </batchtest>
+    </junit>
+    <junitreport todir="build/test/xml">
+      <fileset dir="build/test/xml">
+        <include name="TEST-*.xml"/>
+      </fileset>
+    </junitreport>
+  </target>
+
+  <target name="test-report"
+          description="Convert ANT junit XML reports into HTML">
+    <mkdir dir="build/test/html"/>
+    <junitreport todir="build/test/xml">
+      <fileset dir="build/test/xml">
+        <include name="TEST-*.xml"/>
+      </fileset>
+      <report todir="build/test/html"/>
+    </junitreport>
+  </target>
+
+  <target name="all" description="Clean, compile, JAR and run tests"
+          depends="clean, test, test-report"/>
+
+</project>

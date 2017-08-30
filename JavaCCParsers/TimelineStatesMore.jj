@@ -1,0 +1,181 @@
+/* Copyright (c) 2006, Sun Microsystems, Inc.
+ * All rights reserved.
+ * 
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ * 
+ *     * Redistributions of source code must retain the above copyright notice,
+ *       this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above copyright
+ *       notice, this list of conditions and the following disclaimer in the
+ *       documentation and/or other materials provided with the distribution.
+ *     * Neither the name of the Sun Microsystems, Inc. nor the names of its
+ *       contributors may be used to endorse or promote products derived from
+ *       this software without specific prior written permission.
+ * 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
+ * THE POSSIBILITY OF SUCH DAMAGE.
+ */
+//| <SHIFT: ("shift:("(.)+,(.)+")")>
+
+options
+{
+	IGNORE_CASE=true;
+	LOOKAHEAD=1;
+	FORCE_LA_CHECK=false;
+	STATIC=false;
+}
+
+PARSER_BEGIN(EasyTimeLine)
+
+/** Simple brace matcher. */
+public class EasyTimeLine {
+
+  /** Main entry point. */
+  public static void main(String args[]) throws ParseException {
+    EasyTimeLine parser = new EasyTimeLine(System.in);
+    parser.Start();
+  }
+
+}
+
+
+PARSER_END(EasyTimeLine)
+SKIP :
+{
+	<" ">
+|	<  ~[] >
+}
+
+TOKEN :
+{
+	<PERIOD: "Period"(" ")*("=")> : TIMELINE_START
+|	<FROM: "from"(" ")*(":")> : TIMELINE_DATA_FROM
+}
+
+<TIMELINE_START> SKIP :
+{
+	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<" ">
+}
+
+<TIMELINE_START> TOKEN :
+{
+  <FROM_START: "from:">
+| <TILL_START: "till:">
+| <YEAR_START: (("-")?(["0"-"9"])+) | "start" | "end">
+}
+
+<TIMELINE_DATA_FROM> SKIP :
+{
+  	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<" ">
+|	< ~["0"-"9"] >
+}
+
+<TIMELINE_DATA_FROM> TOKEN :
+{
+  <TILL_DATA_FROM: "till:"> : TIMELINE_DATA_TILL
+| <YEAR_DATA_FROM: (("-")?(["0"-"9"]){1,10}(".")?(["0"-"9"]){1,10}) | "start" | "end" | "0">
+}
+
+<TIMELINE_DATA_TILL> SKIP :
+{
+  	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<" ">
+|	< ~["0"-"9"] >
+}
+
+<TIMELINE_DATA_TILL> TOKEN :
+{
+	<YEAR_DATA_TILL: (("-")?(["0"-"9"]){1,10}(".")?(["0"-"9"]){1,10}) | "start" | "end" | "0"> : TIMELINE_DATA_TILL_TOTEXT
+}
+
+<TIMELINE_DATA_TILL_TOTEXT> SKIP :
+{
+  	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<" ">
+|	< ~[] >
+}
+
+<TIMELINE_DATA_TILL_TOTEXT> TOKEN :
+{
+  <TEXT_DATA_TILL_TOTEXT: "text:"> : TIMELINE_DATA_TEXT
+}
+
+
+<TIMELINE_DATA_TEXT> SKIP :
+{
+  	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<"[["> : TIMELINE_DATA_TEXT_IN
+|	<" ">
+|	< ~["0"-"9"] >
+}
+
+<TIMELINE_DATA_TEXT_IN> SKIP :
+{
+  	<"\n" | "\r" | "\r\n"> : DEFAULT
+|	<"]]"> : TIMELINE_DATA_TEXT
+|	<" ">
+|	< ~["0"-"9"] >
+}
+
+<TIMELINE_DATA_TEXT_IN> TOKEN :
+{
+	<WORDS_DATA_TEXT_IN: ((["a"-"z" , "~" , "#", " "])+("|")?(["a"-"z" , "~" ,"#", " "])+)>
+}
+
+/** Root production. */
+void Start() :
+{
+}
+{
+	(
+	(perioddetect())
+	(fromtilltext())+
+	)+	
+}
+
+void perioddetect() :
+{
+	Token t;
+}
+{
+	<PERIOD>
+	<FROM_START>
+	t = <YEAR_START>
+	{ System.out.println("Start = " + new String(t.image)); }
+	<TILL_START>
+	t = <YEAR_START>
+	{ System.out.println("End = " + new String(t.image)); }
+}
+
+void fromtilltext() :
+{
+	Token t;
+}
+{
+	<FROM>
+	t = <YEAR_DATA_FROM>
+	{ System.out.println(new String(t.image)); }
+	<TILL_DATA_FROM>
+	t = <YEAR_DATA_TILL>
+	{ System.out.println(new String(t.image)); }
+	(<TEXT_DATA_TILL_TOTEXT>)?
+	(t = <WORDS_DATA_TEXT_IN>
+	{ System.out.println(new String(t.image)); })?
+}
+
+< * > TOKEN :
+{
+< UNEXPECTED_CHAR : ~[] >
+}

@@ -1,0 +1,40 @@
+&lt;timeline&gt;
+DateFormat = yyyy
+ImageSize  = width:800 height:auto barincrement:25
+Period     = from:1925 till:1998
+TimeAxis   = orientation:horizontal
+PlotArea   = right:30 left:0 bottom:50 top:5
+
+Colors = id:barcolor value:rgb(0.99,0.7,0.7)
+         id:line     value:black
+         id:bg       value:white
+
+PlotData=
+  width:20 textcolor:black shift:(5,-5) anchor:from fontsize:s
+
+  bar:1  color:powderblue from:1925 till:end text:[[California State University, Chico|Chico State]] (1927&amp;ndash;1996)
+  bar:2  color:powderblue from:1925 till:1992 text:[[UC Davis Aggies|California-Davis]] (1925&amp;ndash;1992)
+  bar:3  color:powderblue from:1925 till:1928 text:[[Saint Mary's College Gaels|Saint Mary's]] (1925&amp;ndash;1928)
+  bar:4  color:powderblue from:1925 till:1939 text:[[Nevada Wolf Pack football|Nevada-Reno]] (1925&amp;ndash;1939,1954&amp;ndash;1968)
+  bar:4  color:powderblue from:1954 till:1968 text:[[Nevada Wolf Pack football|Nevada-Reno]] 
+  bar:5  color:powderblue from:1925 till:1942 text:[[Pacific Tigers football|Pacific]] (1925&amp;ndash;1942)
+  bar:6  color:powderblue from:1925 till:1940 text:[[Fresno State Bulldogs football|Fresno State]] (1925&amp;ndash;1940)
+  bar:7  color:powderblue from:1927 till:1928 text:[[San Francisco Dons football|San Francisco]] (1927&amp;ndash;1928)
+  bar:8  color:powderblue from:1929 till:1934 text:[[San Jose State Spartans football|San Jose State]] (1929&amp;ndash;1934)
+  bar:9  color:powderblue from:1930 till:end text:[[Humboldt State University|Humboldt State]] (1930&amp;ndash;1996)
+  bar:10  color:powderblue from:1947 till:1954 text:[[Southern Oregon Raiders|Southern Oregon]] (1947&amp;ndash;1954)
+  bar:11  color:powderblue from:1947 till:1995 text:[[San Francisco State Gators football|San Francisco State]] (1947&amp;ndash;1995)
+  bar:12  color:powderblue from:1954 till:1984 text:[[Sacramento State Hornets|Sacramento State]] (1954&amp;ndash;1984)
+  bar:13  color:powderblue from:1971 till:1972 text:[[Sonoma State University|Sonoma State]] (1971, 1983&amp;ndash;1998)
+  bar:13  color:powderblue from:1983 till:1998
+  bar:14  color:powderblue from:1964 till:1993 text:[[California State University, East Bay|Cal State Hayward]] (1964&amp;ndash;1993)
+
+ 
+ScaleMajor = gridcolor:line unit:year increment:5 start:1925
+
+TextData =
+   fontsize:L
+   textcolor:black
+   pos:(370,30) # tabs:(0-center)
+   text:"NCAC Membership History"
+&lt;/timeline&gt;
